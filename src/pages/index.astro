@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+
 import Hero from '../components/Hero/Hero';
 import Footer from '../components/Footer/Footer';
 import Sponsors from '../components/Sponsors/Sponsors';
 import Navbar from '../components/Navbar/Navbar';
+import Speakers from '../components/Speakers/Speakers';
 
 ---
 <style is:global>
@@ -38,11 +39,15 @@ a:focus{
   border-radius: 50px;
 }
 
+.speakercard{
+  border-radius: 50%;
+}
 </style>
 <Layout title="FOSSMEC">
 	<main>
 		
 		<Hero/>
+    <Speakers/>
 		<Sponsors/>
 		
 	</main>
