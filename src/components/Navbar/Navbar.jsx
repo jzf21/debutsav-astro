@@ -44,7 +44,7 @@ const Navbar = () => {
             : "right-full flex flex-col gap-8 text-opacity-0  "
         }`}
       >
-        <a href="#home"
+        <a href="/"
           className="group text-black transition-all duration-300 ease-in-out md:ml-8"
          
           onClick={handleHamburger}

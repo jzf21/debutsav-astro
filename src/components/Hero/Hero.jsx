@@ -31,7 +31,7 @@ const Hero = () => {
               </svg> */}
               </button>
               <button className="inline-flex register bg-transparent outline-maroon outline text-maroon  items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   ">
-                About
+                <a href="/Schedule">About</a>
                 {/* <svg
                 className="w-5 h-5 ml-2 -mr-1"
                 fill="currentColor"
@@ -54,10 +54,7 @@ const Hero = () => {
             </a> */}
           </div>
           <div className=" lg:mt-0 lg:col-span-5 lg:flex">
-            <img
-              src={image}
-              alt="mockup"
-            />
+            <img src={image} alt="mockup" />
           </div>
         </div>
       </div>
