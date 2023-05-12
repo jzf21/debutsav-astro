@@ -26,16 +26,40 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+  font-family: 'Poppins', sans-serif;
+
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgb(0, 0, 0);
+  background-color: #f0efef;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+h1{
+  line-height: 20px;
+}
+
+a:focus{
+  outline: none;
+  border: none;
+}
+
+.register{
+  box-shadow: 2px 4px 4px #EA9FB3;
+  border-radius: 50px;
+}
+
+.speakercard{
+  border-radius: 50%;
+}
+.svg-icon:hover path {
+  stroke: #ffffff; /* replace with the desired color */
+}
 </style>
