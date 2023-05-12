@@ -96,11 +96,11 @@ const Navbar = () => {
           </span>
         </a>
         <button className="md:hidden block  register text-xl text-white bg-red px-10 py-2">
-          Register Now
+          <a href={"/Register"}>Register</a>
         </button>
       </div>
       <button className="md:block hidden register text-xl text-white bg-red px-10 py-2">
-        <a to={"/sponsors"}>Register</a>
+        <a href={"/Register"}>Register</a>
       </button>
     </div>
   );
