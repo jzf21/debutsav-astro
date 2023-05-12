@@ -44,6 +44,7 @@ const RegistrationForm = () => {
     }
     else{
       setError(true);
+      console.log("Logged")
       
       
     }
@@ -146,7 +147,7 @@ const RegistrationForm = () => {
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:"
             type="button"/>
         </div>
-        <button onClick={register} className="bg-red  text-white font-bold py-2 px-4 register focus:outline-none focus:shadow-outline" type="button" disabled={error}>Submit</button>
+        <button  onClick={register} className="bg-red  text-white font-bold py-2 px-4 register focus:outline-none focus:shadow-outline" type="button" disabled={error}>{error?"Submitted":"Submit"}</button>
       </form>
     </div>
   );

@@ -1,11 +1,12 @@
 ---
+import Navbar from "../components/Navbar/Navbar";
 import RegistrationForm from "../components/Registeration/Registeration";
 import Layout from "../layouts/Layout.astro";
 
 ---
 
-<Layout title="FOSSMEC">
+
     <main>
+        <Navbar client:load/>
         <RegistrationForm client:load/>
     </main>
-</Layout>
