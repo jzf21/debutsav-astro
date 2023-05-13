@@ -45,7 +45,7 @@ const RegistrationForm = () => {
     }
   };
   return (
-    <div className="w-full max-w-md mx-auto mt-20 py-5">
+    <div className="w-full  min-h-[100vh] max-w-md mx-auto mt-20 py-5">
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <h2 className="text-2xl mb-4 text-red font-bold">Registration Form</h2>
         <div className="mb-4">

@@ -14,8 +14,7 @@ const Footer = () => {
     <div className="bg-red relative bottom-0 text-white flex pt-2  flex-col w-full justify-center items-center gap-6">
       <h1 className="text-2xl">DebUtsav</h1>
       <p className="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et{" "}
+        Reach us at <a className="hovera:underline-white hover:underline" href="mailto:foss@mec.ac.in">foss@mec.ac.in</a> to know more{" "}
       </p>
       <div className="flex flex-row justify-center items-center">
         <a className="mx-2" href="">
@@ -85,15 +84,15 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex flex-row justify-center items-center">
-        <a href={"/"} className="mx-2">
-          About
+        <a href={"/#about"} className="mx-2">
+          About |
         </a>
-        <div className="bg-white text-white" />
-        <a href={"/"} className="mx-2">
-          Sponsors
+      
+        <a href={"/becomesponsor"} className="mx-2">
+          Become a Sponsor
         </a>
         <a href={"/"} className="mx-2 ">
-          Schedule
+           | Schedule
         </a>
       </div>
       <div className="p-2 text-center flex justify-center items-center w-full bg-[#760D29]">

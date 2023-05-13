@@ -10,9 +10,9 @@ const Hero = () => {
             </h1>
             <p className="text-xl font-semibold mb-2">June 17th 2023</p>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-              FOSS MEC is a non-profit foundation that aims at promoting and
-              strengthening the Free and Open Source Software (FOSS) ecosystem
-              among MECians.
+              DebUtsav is an upcoming conference that is set to bring together
+              members of the Debian community to celebrate Free and Open Source
+              Software (FOSS). 
             </p>
             <div className="flex gap-2">
               <button className="inline-flex register bg-red text-white  text-red-500 items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   bg-primary-700 hover:bg-primary-800 ">
