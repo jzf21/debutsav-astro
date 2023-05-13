@@ -1,14 +1,15 @@
 
 const BecomeSponsor = () => {
   return (
-    <div className="flex flex-col max-w-screen-xl h-[100vh]  px-4 py-8 mt-16  mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-      <h2 className="text-5xl font-bold text-left col-span-12">
+    <div className="flex flex-col max-w-screen-xl min-h-[100vh]  px-4 py-8 mt-16  mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 ">
+      <h2 className="text-5xl font-bold text-left ">
         Become a Sponsor
       </h2>
-      <p className='w-full text-lg tracking-wide font-light leading-2 my-4'>
+      <p className="w-full text-lg tracking-wide font-light leading-2 my-4">
         Thank you for your interest in DebConf, the annual conference of the
-        Debian Project!<br/> We invite you to sponsor our conference at a level which
-        fits your budget and matches your desired level of visibility in our
+        Debian Project!
+        <br /> We invite you to sponsor our conference at a level which fits
+        your budget and matches your desired level of visibility in our
         community and in the media. We offer several sponsorship levels,
         detailed in the table below, and are also open to other opportunities.
         Our higher levels of sponsorship include the possibility of advertising
@@ -21,9 +22,10 @@ const BecomeSponsor = () => {
         meeting face to face once a year improves the remote collaboration among
         our contributors during the remainder of the year.
       </p>
-  <SponsorTable/>
- 
-      
+      <SponsorTable />
+      <button className="md:block register self-start text-sm my-4 md:text-xl text-white bg-red px-6 py-4">
+        <a href={"/Register"}>View Brochure</a>
+      </button>
     </div>
   );
 }
@@ -59,7 +61,7 @@ const data = [
 
 function Table() {
   return (
-    <table className="min-w-full divide-y divide-gray-200">
+    <table className="min-w-full divide-y divide-gray-200 overflow-auto">
       <thead className="bg-gray-50">
         <tr>
           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"></th>
@@ -114,65 +116,84 @@ function SponsorTable() {
       <thead className="divide-x divide-y divide-gray-200">
         <tr className="divide-x divide-y divide-gray-200">
           <th></th>
-          <th>supporter</th>
-          <th>bronze</th>
-          <th>silver</th>
+          <th>Platinum</th>
           <th>gold</th>
-          <th>platinum</th>
+          <th>silver</th>
+          <th>bronze</th>
+          <th>supporter</th>
         </tr>
       </thead>
       <tbody className="divide-y divide-gray-200">
         <SponsorTableRow
           title="Contribution in INR"
-          values={[
-            "₹40k to ₹1.5 lakh",
-            "₹1.5 lakh",
-            "₹4 lakh",
-            "₹8 lakh",
-            "₹16 lakh",
-          ]}
+          values={["₹30k", "₹25k", "₹15k", "₹10k", "₹6k "]}
         />
         <SponsorTableRow
           title="Contribution in USD"
-          values={["$500 to $2,000", "$2,000", "$5,000", "$10,000", "$20,000"]}
+          values={["$364.86", "$304.5", "$182.43", "$121.62", "$72.97"]}
         />
         <SponsorTableRow
           title="Logo on sponsor webpage"
-          values={["✓", "", "", "", ""]}
+          values={["✓", "✓", "✓", "✓", "✓"]}
         />
         <SponsorTableRow
-          title="Provide materials for conference bags"
-          values={["✓", "✓", "", "", ""]}
+          title="Logo on Delegate Kit"
+          values={["✓", "✓", "✓", "✓", "✓"]}
           startColumn={1}
         />
         <SponsorTableRow
-          title="Logo on T-shirts and conference bags"
-          values={["", "", "", "", ""]}
+          title="Logo on 10 min presentation"
+          values={["✓", "✓", "✓", "✓", ""]}
           startColumn={2}
         />
         <SponsorTableRow
-          title="Presence at the job fair"
-          values={["", "", "", "", ""]}
+          title="Logo on stage backdrop"
+          values={["✓", "✓", "✓", "", ""]}
           startColumn={3}
         />
         <SponsorTableRow
-          title="Logo on video streams and recordings"
-          values={["", "", "", "", ""]}
+          title="Complimentary tickets"
+          values={["✓", "✓", "", "", ""]}
           startColumn={4}
         />
         <SponsorTableRow
-          title="Logo on general conference banners"
-          values={["", "", "", "", ""]}
+          title="Logo on promotional materials"
+          values={["✓", "✓", "", "", ""]}
           startColumn={4}
         />
         <SponsorTableRow
-          title="Logo on podium banners"
-          values={["", "", "", "", ""]}
+          title="Standees/Banners at venue"
+          values={["✓", "✓", "", "", ""]}
           startColumn={5}
         />
         <SponsorTableRow
-          title="Mention in press releases"
-          values={["", "", "", "", ""]}
+          title="Mention in social media release"
+          values={["✓", "✓", "", "", ""]}
+          startColumn={5}
+        />
+        <SponsorTableRow
+          title="Brochures/Flyers can be distributed"
+          values={["✓", "", "", "", ""]}
+          startColumn={5}
+        />
+        <SponsorTableRow
+          title="Stall can be set up"
+          values={["✓", "", "", "", ""]}
+          startColumn={5}
+        />
+        <SponsorTableRow
+          title="Promotion in pre-event session "
+          values={["✓", "", "", "", ""]}
+          startColumn={5}
+        />
+        <SponsorTableRow
+          title="Logo on speaker's kit"
+          values={["✓", "", "", "", ""]}
+          startColumn={5}
+        />
+        <SponsorTableRow
+          title="Product promotion in upcoming events by FOSS MEC"
+          values={["✓", "", "", "", ""]}
           startColumn={5}
         />
       </tbody>
