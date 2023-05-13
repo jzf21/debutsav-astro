@@ -25,11 +25,16 @@ export default ContactUs;
 const ContactCard = ({name,designation,phone}) => {
   return (
     <div className="flex flex-row justify-center items-center ">
-      <img src={contactimg} className="w-[100px] h-auto bg-white flex-start border border-black "/>
+      <img
+        src={contactimg}
+        className="w-[100px] h-auto bg-white flex-start border border-black "
+      />
       <div className="flex flex-col justify-center h-[100px]  p-4 min-w-[250px] border-r border-y border-black  ">
-        <h2 className='tracking-wider uppercase font-semibold'>{name}</h2>
+        <h2 className="tracking-wider uppercase font-semibold">{name}</h2>
         <p>{designation}</p>
-        <p className='font-semibold text-xs mt-2'>{phone}</p>
+        <p className="font-semibold text-xs mt-2">
+          <a href={`tel:${phone}`}>{phone}</a>
+        </p>
       </div>
     </div>
   );

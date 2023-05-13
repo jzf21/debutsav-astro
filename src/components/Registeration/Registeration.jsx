@@ -33,6 +33,12 @@ const RegistrationForm = () => {
       if (error.code === "23514") {
         alert("Please enter valid details");
       }
+      if(error.code === "23502"){
+        alert("Please enter all details")
+      }
+      else{
+        alert("Please enter valid details")
+      }
     } else {
       setError(true);
       console.log("Logged");
