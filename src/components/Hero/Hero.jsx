@@ -16,7 +16,7 @@ const Hero = () => {
             </p>
             <div className="flex gap-2">
               <button className="inline-flex register bg-red text-white  text-red-500 items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   bg-primary-700 hover:bg-primary-800 ">
-                Register
+                <a href="/Register">Register</a>
                 {/* <svg
                 className="w-5 h-5 ml-2 -mr-1"
                 fill="currentColor"

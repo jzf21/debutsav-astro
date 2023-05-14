@@ -8,21 +8,17 @@ const About = () => {
           About <span className="text-red">DebUtsav</span>
         </h2>
         <p className="text-lg tracking-wide md:text-lg">
-          Welcome to DebUtsav, a celebration of Free and Open Source Software
-          (FOSS) organized by FOSSMEC. This unique event brings together
-          individuals from the Debian community to collaborate, learn, and
-          contribute to the development of FOSS systems. At DebUtsav, attendees
-          can participate in a range of exciting opportunities, including
-          hands-on workshops, insightful discussions, and engaging talk
-          sessions. Our goal is to facilitate the growth of FOSS systems and
-          contribute to the advancement of technology. FOSS enthusiasts will
-          also have the chance to network with other contributors and exchange
-          ideas. By bringing together a diverse community of individuals
-          passionate about FOSS, we hope to inspire and encourage the
-          development of innovative solutions that have a positive impact on the
-          world. Join us at DebUtsav to connect with like-minded individuals and
-          become a part of the FOSS movement. Together, we can help shape the
-          future of technology for the better.
+          DebUtsav, a conference where the Debian community gathers to celebrate
+          Free and Open Source Software (FOSS), will be hosted by Model
+          Engineering College. DebUtsav, organized by FOSSMEC is a unique event
+          that provides individuals with the chance to collaborate, learn, and
+          contribute to the development of the FOSS community. The conference
+          will offer attendees a range of exciting opportunities, including
+          hands-on-workshops, insightful discussions, and engaging talk
+          sessions. FOSS enthusiasts will also have the chance to network with
+          other contributors and exchange ideas, which could facilitate the
+          growth of FOSS systems and contribute to the
+          advancement of technology.
         </p>
       </div>
       <img src={debutsav} className="mx-auto my-auto h-50 md:h-80 " alt="" />

@@ -28,8 +28,8 @@ const SpeakerCard=()=>{
     </div>
        
           <div className="mt-8 ">
-            <h2 className="text-white font-bold text-xl text-center tracking-wide">
-              Jonathan <br /> Smith
+            <h2 className="text-white font-bold text-sm text-center tracking-wide">
+              To be confirmed
             </h2>
           </div>
         
