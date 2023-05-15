@@ -14,10 +14,17 @@ const Footer = () => {
     <div className="bg-red relative bottom-0 text-white flex pt-2  flex-col w-full justify-center items-center gap-6">
       <h1 className="text-2xl">DebUtsav</h1>
       <p className="text-center">
-        Reach us at <a className="hovera:underline-white hover:underline" href="mailto:foss@mec.ac.in">foss@mec.ac.in</a> to know more{" "}
+        Reach us at{" "}
+        <a
+          className="hovera:underline-white hover:underline"
+          href="mailto:foss@mec.ac.in"
+        >
+          foss@mec.ac.in
+        </a>{" "}
+        to know more{" "}
       </p>
       <div className="flex flex-row justify-center items-center">
-        <a className="mx-2" href="">
+        <a className="mx-2" href="https://github.com/FossMec" target="_blank">
           <svg
             width="30"
             height="30"
@@ -34,7 +41,7 @@ const Footer = () => {
             />
           </svg>
         </a>
-        <a className="mx-2 svg-icon" href="#">
+        <a className="mx-2 svg-icon" href="https://twitter.com/FossMec" target="_blank">
           <svg
             width="30"
             height="30"
@@ -51,7 +58,11 @@ const Footer = () => {
             />
           </svg>
         </a>
-        <a className="mx-2 svg-icon " href="#">
+        <a
+          className="mx-2 svg-icon "
+          href="https://www.instagram.com/foss_mec/"
+          target="_blank"
+        >
           <svg
             width="30"
             height="30"
@@ -87,12 +98,12 @@ const Footer = () => {
         <a href={"/#about"} className="mx-2">
           About |
         </a>
-      
+
         <a href={"/becomesponsor"} className="mx-2">
           Become a Sponsor
         </a>
         <a href={"/Schedule"} className="mx-2 ">
-           | Schedule
+          | Schedule
         </a>
       </div>
       <div className="p-2 text-center flex justify-center items-center w-full bg-[#760D29]">
