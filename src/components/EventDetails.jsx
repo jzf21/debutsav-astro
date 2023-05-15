@@ -1,5 +1,3 @@
-
-
 const EventDetails = () => {
   return (
     <div className="max-w-screen-2xl py-5 mt-10 flex flex-col justify-center items-center h-[80vh]">
@@ -16,7 +14,7 @@ const EventDetails = () => {
         <h2 className="text-2xl text-red p-5 mt-5">Event Details</h2>
         <p>Date: 17th June 2023</p>
         <p>Time : 9:00am to 6:00pm</p>
-        <p>Venue: Governt Model Engineering College, Thrikkakara</p>
+        <p>Venue: Government Model Engineering College, Thrikkakara</p>
       </div>
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-2xl text-red p-5 mt-5">Confirmed Speakers</h2>
@@ -26,6 +24,6 @@ const EventDetails = () => {
       </div>
     </div>
   );
-}
+};
 
-export default EventDetails
+export default EventDetails;
