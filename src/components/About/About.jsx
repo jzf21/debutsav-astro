@@ -1,5 +1,6 @@
 import React from "react";
 import debutsav from "../../assets/logo.svg";
+import foss from '../../assets/foss.jpeg'
 const About = () => {
   return (
     <div className="grid mx-auto min-h-[100vh] px-5 max-w-screen-xl grid-cols-1 md:grid-cols-2 py-5">
@@ -21,8 +22,8 @@ const About = () => {
           advancement of technology.
         </p>
       </div>
-      <img src={debutsav} className="mx-auto my-auto h-50 md:h-80 " alt="" />
-      <img src="" alt="" />
+      <img src={debutsav} className="mx-auto my-auto  md:h-80 " alt="" />
+      <img src={foss} className="mx-auto my-auto rounded-full md:h-80" alt="" />
       <div className="text-left md:text-right">
         <h2 className="text-3xl md:text-5xl text-left md:text-right text-black font-semibold py-4">
           About <span className="text-yellow">FOSS MEC</span>
