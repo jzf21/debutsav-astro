@@ -27,7 +27,7 @@ const BecomeSponsor = () => {
       <button className="md:block register self-start text-sm my-4 md:text-xl text-white bg-red px-6 py-4">
         <a
           href={
-            "https://drive.google.com/file/d/1tni3oBTDM1N1MWPUCSAU8BNHKfCwtZnn/view?usp=sharing"
+            "https://drive.google.com/file/d/1a_9n1-KkVyQvR9DKvCbvp69vXwnIYqBk/view?usp=sharing"
           }
           target="_blank"
         >
@@ -134,7 +134,7 @@ function SponsorTable() {
       <tbody className="divide-y divide-gray-200">
         <SponsorTableRow
           title="Contribution in INR"
-          values={["₹30k", "₹25k", "₹15k", "₹10k", "₹6k "]}
+          values={["₹50k", "₹30k", "₹15k", "₹10k", "₹6k "]}
         />
         <SponsorTableRow
           title="Contribution in USD"
