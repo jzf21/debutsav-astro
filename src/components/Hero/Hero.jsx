@@ -12,12 +12,13 @@ const Hero = () => {
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               DebUtsav is an upcoming conference that is set to bring together
               members of the Debian community to celebrate Free and Open Source
-              Software (FOSS). 
+              Software (FOSS).
             </p>
             <div className="flex gap-2">
-              <button className="inline-flex register bg-red text-white  text-red-500 items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   bg-primary-700 hover:bg-primary-800 ">
-                <a href="/Register">Register</a>
-                {/* <svg
+              <a href="/Register">
+                <button className="inline-flex register bg-red text-white  text-red-500 items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   bg-primary-700 hover:bg-primary-800 ">
+                  Register
+                  {/* <svg
                 className="w-5 h-5 ml-2 -mr-1"
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -29,10 +30,12 @@ const Hero = () => {
                   clipRule="evenodd"
                 ></path>
               </svg> */}
-              </button>
-              <button className="inline-flex register bg-transparent outline-maroon outline text-maroon  items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   ">
-                <a href="/Schedule">About</a>
-                {/* <svg
+                </button>
+              </a>
+              <a href="/Schedule">
+                <button className="inline-flex register bg-transparent outline-maroon outline text-maroon  items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   ">
+                  About
+                  {/* <svg
                 className="w-5 h-5 ml-2 -mr-1"
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -44,7 +47,8 @@ const Hero = () => {
                   clipRule="evenodd"
                 ></path>
               </svg> */}
-              </button>
+                </button>
+              </a>
             </div>
             {/* <a
               href="#"
