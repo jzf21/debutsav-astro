@@ -91,7 +91,7 @@ const Footer = () => {
         <a href={"/becomesponsor"} className="mx-2">
           Become a Sponsor
         </a>
-        <a href={"/"} className="mx-2 ">
+        <a href={"/Schedule"} className="mx-2 ">
            | Schedule
         </a>
       </div>
