@@ -22,8 +22,8 @@ const About = () => {
           advancement of technology.
         </p>
       </div>
-      <img src={debutsav} className="mx-auto my-auto  md:h-80 " alt="" />
-      <img src={foss} className="mx-auto my-auto rounded-full md:h-80" alt="" />
+      <img src={debutsav} className="hidden md:block mx-auto my-auto  md:h-80 " alt="" />
+      <img src={foss} className="mx-auto hidden md:block my-auto rounded-full md:h-80" alt="" />
       <div className="text-left md:text-right ">
         <h2 className="text-3xl md:text-5xl text-left md:text-right text-black font-semibold py-4">
           About <span className="text-yellow">FOSS MEC</span>
