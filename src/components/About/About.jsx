@@ -4,11 +4,16 @@ import foss from '../../assets/foss.jpeg'
 const About = () => {
   return (
     <div className="grid mx-auto min-h-[100vh] px-5 max-w-screen-xl grid-cols-1 md:grid-cols-2 py-5">
+      <img
+        src={debutsav}
+        className="hidden md:block mx-auto my-auto  md:h-80 "
+        alt=""
+      />
       <div className="text-left">
         <h2 className="text-3xl md:text-5xl md:text-left text-black font-semibold py-4">
           About <span className="text-red">DebUtsav</span>
         </h2>
-        <p className="text-lg tracking-wide md:text-lg">
+        <p className="text-lg tracking-wide  md:text-lg">
           DebUtsav, a conference where the Debian community gathers to celebrate
           Free and Open Source Software (FOSS), will be hosted by Model
           Engineering College. DebUtsav, organized by FOSSMEC is a unique event
@@ -22,10 +27,9 @@ const About = () => {
           advancement of technology.
         </p>
       </div>
-      <img src={debutsav} className="hidden md:block mx-auto my-auto  md:h-80 " alt="" />
-      <img src={foss} className="mx-auto hidden md:block my-auto rounded-full md:h-80" alt="" />
-      <div className="text-left md:text-right ">
-        <h2 className="text-3xl md:text-5xl text-left md:text-right text-black font-semibold py-4">
+
+      <div className="text-left  ">
+        <h2 className="text-3xl md:text-5xl text-left  text-black font-semibold py-4">
           About <span className="text-yellow">FOSS MEC</span>
         </h2>
         <p className="text-lg md:text-lg tracking-wide">
@@ -43,6 +47,11 @@ const About = () => {
           to succeed in this exciting and rapidly growing field.
         </p>
       </div>
+      <img
+        src={foss}
+        className="mx-auto hidden md:block my-auto rounded-full md:h-80"
+        alt=""
+      />
     </div>
   );
 };

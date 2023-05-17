@@ -94,7 +94,7 @@ const Footer = () => {
           </svg>
         </a>
       </div>
-      <div className="flex flex-row justify-center  items-center">
+      <div className="flex flex-row justify-center  items-center text-sm">
         <a href={"/#about"} className="mx-2">
           About |
         </a>
@@ -102,11 +102,11 @@ const Footer = () => {
         <a href={"/becomesponsor"} className="mx-2">
           Become a Sponsor
         </a>
-        <a href={"/Schedule"} className="mx-2 ">
+        <a href={"/Schedule"} className="mx-2  ">
           | Schedule
         </a>
       </div>
-      <div className="p-2 text-center flex justify-center items-center w-full bg-[#760D29]">
+      <div className="p-2 text-center text-sm flex justify-center items-center w-full bg-[#760D29]">
         Copyright@2023
       </div>
     </div>
