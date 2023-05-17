@@ -13,7 +13,7 @@ const ContactUs = () => {
           phone={"99954 60475"}
         />
         <ContactCard
-          name="Jitin Jagadeesh"
+          name="Jithin Jagadeesh"
           designation={"Chairperson"}
           phone={"92075 89302"}
         />

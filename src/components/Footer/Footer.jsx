@@ -94,7 +94,7 @@ const Footer = () => {
           </svg>
         </a>
       </div>
-      <div className="flex flex-row justify-center items-center">
+      <div className="flex flex-row justify-center  items-center">
         <a href={"/#about"} className="mx-2">
           About |
         </a>
