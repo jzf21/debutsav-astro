@@ -23,7 +23,10 @@ const BecomeSponsor = () => {
         Thank you for your interest in DebUtsav and we look forward to
         collaborate with you to make this event a great success.
       </p>
-      <SponsorTable />
+      
+        {" "}
+        <SponsorTable />
+     
       <button className="md:block register self-start text-sm my-4 md:text-xl text-white bg-red px-6 py-4">
         <a
           href={
