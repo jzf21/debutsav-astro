@@ -92,6 +92,35 @@ const RegistrationForm = () => {
         </div>
         <div className="mb-4">
           <label className="block text-red font-bold mb-2" htmlFor="diet">
+            Are you a
+          </label>
+          <select
+            onChange={handleChange}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white border-red"
+            id="diet"
+            name="veg"
+          >
+            <option value={true}>Student</option>
+            <option value={false}>Professional</option>
+          </select>
+        </div>
+        <div className="mb-4">
+          <label className="block text-red font-bold mb-2" htmlFor="college">
+           If you are a student then enter your college name
+          </label>
+          <input
+            autoComplete="new-password"
+            onChange={handleChange}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white border-red"
+            id="college"
+            type="text"
+            name="college"
+            placeholder="Your college name"
+          />
+        </div>
+
+        <div className="mb-4">
+          <label className="block text-red font-bold mb-2" htmlFor="diet">
             Diet
           </label>
           <select
@@ -104,18 +133,47 @@ const RegistrationForm = () => {
             <option value={false}>Non-veg</option>
           </select>
         </div>
+        {/* github profile */}
         <div className="mb-4">
           <label className="block text-red font-bold mb-2" htmlFor="college">
-            College
+            Github profile
           </label>
           <input
             autoComplete="new-password"
             onChange={handleChange}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white border-red"
-            id="college"
+            id="github"
             type="text"
-            name="college"
-            placeholder="College"
+            name="github"
+            placeholder="https://github.com/fossmec"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-red font-bold mb-2" htmlFor="college">
+            Have you contributed to any open source project?
+          </label>
+          <input
+            autoComplete="new-password"
+            onChange={handleChange}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white border-red"
+            id="contributions"
+            type="text"
+            name="contributions"
+            placeholder="enter the link to your contribution"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-red font-bold mb-2" htmlFor="college">
+            Do you use a linux distro as your primary OS?
+          </label>
+          <input
+            autoComplete="new-password"
+            onChange={handleChange}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white border-red"
+            id="distro"
+            type="text"
+            name="distro"
+            placeholder="distro"
           />
         </div>
         <div className="mb-4">
@@ -128,7 +186,6 @@ const RegistrationForm = () => {
             id="diet"
             name="size"
           >
-              
             <option value="S">Small </option>
             <option value="M">Medium</option>
             <option value="L">Large</option>

@@ -2,19 +2,21 @@ import React from 'react'
 
 const Speakers = () => {
   return (
-    <div className='bg-red text-white py-5 '>
-        <h1 className='text-3xl text-center font-semibold p-3'>Speakers</h1>
-        <div className='flex flex-col md:flex-row justify-evenly'>
-            <SpeakerCard/>
-            <SpeakerCard/>
-            <SpeakerCard/>
-
-        </div>
+    <div className="bg-red text-white py-5 ">
+      <h1 className="text-3xl text-center font-semibold p-3">Speakers</h1>
+      <div className="flex flex-col md:flex-row justify-evenly">
+        <SpeakerCard
+          name={"Athul Cyriac Ajay"}
+          designation={"DevOps Engineer at Frappe"}
+        />
+        <SpeakerCard name={"Andrew Bastin"} designation={"CTO, Hoppscotch"} />
+        <SpeakerCard name={"Abraham Raji"} designation={"Debian Developer"} />
+      </div>
     </div>
-  )
+  );
 }
 
-const SpeakerCard=()=>{
+const SpeakerCard=({name,designation,img})=>{
     return (
   
           <div className="mt-6 w-fit mx-auto">
@@ -29,8 +31,11 @@ const SpeakerCard=()=>{
        
           <div className="mt-8 ">
             <h2 className="text-white font-bold text-sm text-center tracking-wide">
-              To be confirmed
+              {name}
             </h2>
+            <p className="text-center text-gray-400 text-xs mt-2">
+              {designation}
+            </p>
           </div>
         
     
