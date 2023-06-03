@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Speakers from '../components/Speakers/Speakers';
 import ContactUs from '../components/ContactUs/ContactUs';
 import About from '../components/About/About';
+import CountdownTimer from '../components/Countdown/Countdown';
 
 ---
 <style is:global>
@@ -50,11 +51,21 @@ a:focus{
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.countdown {
+    font-weight: 700;
+    font-size: 4rem;
+    color: #ffffff;
+    -webkit-text-stroke: 2px #CC1848;
+}
+
+
 </style>
 <Layout title="DebUtsav">
 	<main>
 		
 		<Hero/>
+    <CountdownTimer targetDate={new Date('June 17, 2023 09:30:00').getTime()} client:only />
+   
     <About/>
     <Speakers/>
 		<Sponsors/>
