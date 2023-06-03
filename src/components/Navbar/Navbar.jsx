@@ -66,7 +66,7 @@ const Navbar = () => {
           className="group text-black transition-all duration-300 ease-in-out md:ml-8"
           onClick={handleHamburger}
         >
-          <span className="bg-left-bottom text-xl font-normal bg-gradient-to-r from-yellow to-yellow bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration ease-out">
+          <span className="bg-left-bottom text-xl font-normal bg-gradient-to-r from-red to-red bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration ease-out">
             Home
           </span>
         </a>
@@ -74,7 +74,7 @@ const Navbar = () => {
           className="group text-black transition-all duration-300 ease-in-out md:ml-8"
           href="/becomesponsor"
         >
-          <span className="bg-left-bottom text-xl font-normal bg-gradient-to-r from-yellow to-yellow bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration ease-out">
+          <span className="bg-left-bottom text-xl font-normal bg-gradient-to-r from-red to-red bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration ease-out">
             Sponsors
           </span>
         </a>
@@ -82,7 +82,7 @@ const Navbar = () => {
           className="group text-black transition-all duration-300 ease-in-out md:ml-8"
           href="/Schedule"
         >
-          <span className="bg-left-bottom text-xl font-normal bg-gradient-to-r from-yellow to-yellow bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration ease-out">
+          <span className="bg-left-bottom text-xl font-normal bg-gradient-to-r from-red to-red bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration ease-out">
             Event
           </span>
         </a>
@@ -91,7 +91,7 @@ const Navbar = () => {
           href="/#contact"
           onClick={handleHamburger}
         >
-          <span className="bg-left-bottom text-xl font-normal bg-gradient-to-r from-yellow to-yellow bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          <span className="bg-left-bottom text-xl font-normal bg-gradient-to-r from-red to-red bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
             Contact
           </span>
         </a>
