@@ -30,7 +30,7 @@ const About = () => {
 
       <div className="text-left  ">
         <h2 className="text-3xl md:text-5xl text-left  text-black font-semibold py-4">
-          About <span className="text-yellow">FOSS MEC</span>
+          About <span className="fossmec">FOSS MEC</span>
         </h2>
         <p className="text-lg md:text-lg tracking-wide">
           The Free and Open Source Cell at Model Engineering College
