@@ -2,7 +2,7 @@ import React from 'react'
 
 const Speakers = () => {
   return (
-    <div className="bg-red text-white py-5 ">
+    <div id="speakers" className="bg-red text-white py-5 ">
       <h1 className="text-3xl text-center font-semibold p-3">Speakers</h1>
       <div className="flex flex-col md:flex-row justify-evenly">
         <SpeakerCard

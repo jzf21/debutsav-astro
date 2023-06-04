@@ -9,8 +9,10 @@ const RegistrationForm = () => {
     name: "",
     email: "",
     phone: "",
-    veg: "",
+    veg: true,
+    student_or_professional:true ,
     college: "",
+    size: "S",
   });
   const [error, setError] = useState(false);
   const handleChange = (e) => {
@@ -97,8 +99,8 @@ const RegistrationForm = () => {
           <select
             onChange={handleChange}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white border-red"
-            id="diet"
-            name="veg"
+            id="student_or_professional"
+            name="student_or_professional"
           >
             <option value={true}>Student</option>
             <option value={false}>Professional</option>
@@ -186,8 +188,8 @@ const RegistrationForm = () => {
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white border-red"
             id="distro"
             type="text"
-            name="fingerprint"
-            placeholder="distro"
+            name="pgp"
+            placeholder="PGP fingerprint"
           />
         </div>
         <div className="mb-4">
