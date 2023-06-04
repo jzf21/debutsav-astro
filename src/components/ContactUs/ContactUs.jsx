@@ -11,11 +11,13 @@ const ContactUs = () => {
           name="Mekha L"
           designation={"Marketing Head"}
           phone={"99954 60475"}
+          left={true}
         />
         <ContactCard
           name="Jithin Jagadeesh"
           designation={"Chairperson"}
           phone={"92075 89302"}
+          left={false}
         />
       </div>
     </div>
@@ -24,9 +26,13 @@ const ContactUs = () => {
 
 export default ContactUs;
 
-const ContactCard = ({ name, designation, phone }) => {
+const ContactCard = ({name, designation, phone, left}) => {
   return (
-    <div className="flex flex-row justify-center items-center ">
+    <div
+      className="flex flex-row justify-center items-center "
+      data-aos={left ? "fade-right" : "fade-left"}
+      data-aos-duration="1500"
+    >
       <img
         src={contactimg}
         className="w-[100px] h-auto bg-white flex-start border border-black "

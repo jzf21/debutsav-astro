@@ -1,6 +1,6 @@
 import React from "react";
 import debutsav from "../../assets/logo.svg";
-import foss from '../../assets/foss.jpeg'
+import foss from "../../assets/foss.jpeg";
 const About = () => {
   return (
     <div className="grid mx-auto min-h-[100vh] px-5 max-w-screen-xl grid-cols-1 md:grid-cols-2 py-5">
@@ -9,7 +9,12 @@ const About = () => {
         className="hidden md:block mx-auto my-auto  md:h-80 "
         alt=""
       />
-      <div className="text-left">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine"
+        className="text-left"
+      >
         <h2 className="text-3xl md:text-5xl md:text-left text-black font-semibold py-4">
           About <span className="text-red">DebUtsav</span>
         </h2>
@@ -28,7 +33,12 @@ const About = () => {
         </p>
       </div>
 
-      <div className="text-left  ">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine"
+        className="text-left"
+      >
         <h2 className="text-3xl md:text-5xl text-left  text-black font-semibold py-4">
           About <span className="fossmec">FOSS MEC</span>
         </h2>
