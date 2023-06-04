@@ -1,4 +1,4 @@
-import image from'../../assets/Conference-amico.svg'
+import image from "../../assets/Conference-amico.svg";
 const Hero = () => {
   return (
     <>
