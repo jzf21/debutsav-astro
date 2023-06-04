@@ -2,10 +2,16 @@ import image from'../../assets/Conference-amico.svg'
 const Hero = () => {
   return (
     <>
-      <div className=" text-black mt-10 sm:mt-10 lg:mt-10  py-16 md:mt-10 xl:mt-4 md:py-10  ">
+      <div className=" text-black mt-10 sm:mt-10 lg:mt-10  pt-16 md:mt-10 xl:mt-4 md:pt-10  ">
         <div className="grid max-w-screen-xl min-h-[100vh]  px-4  mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-4 text-3xl font-semibold  text-black md:text-6xl xl:text-7xl  ">
+            <h1
+              data-aos="fade-zoom-in"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+              className="max-w-2xl mb-4 text-3xl font-semibold  text-black md:text-6xl xl:text-7xl  "
+            >
               Welcome to <br /> <span className="text-red">DebUtsav</span> 2023
             </h1>
             <p className="text-xl font-semibold mb-2">June 17th 2023</p>

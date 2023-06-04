@@ -106,7 +106,7 @@ const RegistrationForm = () => {
         </div>
         <div className="mb-4">
           <label className="block text-red font-bold mb-2" htmlFor="college">
-           If you are a student then enter your college name
+            If you are a student then enter your college name
           </label>
           <input
             autoComplete="new-password"
@@ -136,7 +136,7 @@ const RegistrationForm = () => {
         {/* github profile */}
         <div className="mb-4">
           <label className="block text-red font-bold mb-2" htmlFor="college">
-            Github profile
+            Git profile
           </label>
           <input
             autoComplete="new-password"
@@ -150,7 +150,7 @@ const RegistrationForm = () => {
         </div>
         <div className="mb-4">
           <label className="block text-red font-bold mb-2" htmlFor="college">
-            Have you contributed to any open source project?
+            Have you contributed to any FOSS(Free and Open Source) project?
           </label>
           <input
             autoComplete="new-password"
@@ -164,7 +164,7 @@ const RegistrationForm = () => {
         </div>
         <div className="mb-4">
           <label className="block text-red font-bold mb-2" htmlFor="college">
-            Do you use a linux distro as your primary OS?
+            Do you use a GNU/Linux distro as your primary OS?
           </label>
           <input
             autoComplete="new-password"
@@ -173,6 +173,20 @@ const RegistrationForm = () => {
             id="distro"
             type="text"
             name="distro"
+            placeholder="distro"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-red font-bold mb-2" htmlFor="college">
+            Do you have a PGP fingerprint?
+          </label>
+          <input
+            autoComplete="new-password"
+            onChange={handleChange}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-white border-red"
+            id="distro"
+            type="text"
+            name="fingerprint"
             placeholder="distro"
           />
         </div>
