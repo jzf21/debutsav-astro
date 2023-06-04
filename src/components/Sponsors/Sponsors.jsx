@@ -2,10 +2,12 @@ import fossunited from '../../assets/black-on-white.svg'
 
 const Sponsors = () => {
   const platinumSponsors = [
-   
+    "https://img.freepik.com/free-vector/abstract-grunge-style-coming-soon-with-black-splatter_1017-26690.jpg?w=996&t=st=1683302715~exp=1683303315~hmac=0488ba43a2670a8ab5283b13eb121b71459988258f7e0a14d1572a8085c079e0",
+    "https://img.freepik.com/free-vector/abstract-grunge-style-coming-soon-with-black-splatter_1017-26690.jpg?w=996&t=st=1683302715~exp=1683303315~hmac=0488ba43a2670a8ab5283b13eb121b71459988258f7e0a14d1572a8085c079e0",
   ];
   const goldSponsors = [
-   
+    "https://img.freepik.com/free-vector/abstract-grunge-style-coming-soon-with-black-splatter_1017-26690.jpg?w=996&t=st=1683302715~exp=1683303315~hmac=0488ba43a2670a8ab5283b13eb121b71459988258f7e0a14d1572a8085c079e0",
+    "https://img.freepik.com/free-vector/abstract-grunge-style-coming-soon-with-black-splatter_1017-26690.jpg?w=996&t=st=1683302715~exp=1683303315~hmac=0488ba43a2670a8ab5283b13eb121b71459988258f7e0a14d1572a8085c079e0",
   ];
   const silverSponsors = [
 
@@ -16,7 +18,11 @@ const Sponsors = () => {
 
   const renderSponsors = (sponsors, width) =>
     sponsors?.map((sponsor) => (
-      <div className="p-4 md:p-10 md:mx-10">
+      <div
+        data-aos="flip-down"
+        data-aos-duration="1500"
+        className="p-4 md:p-10 md:mx-10"
+      >
         <img src={sponsor} width={width} alt="" srcset="" />
       </div>
     ));

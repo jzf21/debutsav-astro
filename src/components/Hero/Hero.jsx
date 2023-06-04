@@ -1,4 +1,4 @@
-import image from'../../assets/Conference-amico.svg'
+import image from "../../assets/Conference-amico.svg";
 const Hero = () => {
   return (
     <>
@@ -6,16 +6,32 @@ const Hero = () => {
         <div className="grid max-w-screen-xl min-h-[100vh]  px-4  mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1
-              data-aos="fade-zoom-in"
+              className="max-w-2xl mb-4 text-3xl font-semibold  text-black md:text-6xl xl:text-7xl  "
+              data-aos="fade-down"
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"
               data-aos-duration="600"
-              className="max-w-2xl mb-4 text-3xl font-semibold  text-black md:text-6xl xl:text-7xl  "
             >
               Welcome to <br /> <span className="text-red">DebUtsav</span> 2023
             </h1>
-            <p className="text-xl font-semibold mb-2">June 17th 2023</p>
-            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p
+              data-aos="fade-in"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+              data-aos-delay="400"
+              className="text-xl font-semibold mb-2"
+            >
+              June 17th 2023
+            </p>
+            <p
+              data-aos="fade-in"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+              data-aos-delay="500"
+              className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+            >
               DebUtsav is an upcoming conference that is set to bring together
               members of the Debian community to celebrate Free and Open Source
               Software (FOSS).
@@ -64,7 +80,15 @@ const Hero = () => {
             </a> */}
           </div>
           <div className=" lg:mt-0 lg:col-span-5 lg:flex">
-            <img src={image} alt="mockup" />
+            <img
+              data-aos="fade-zoom-in"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+              data-aos-delay="800"
+              src={image}
+              alt="mockup"
+            />
           </div>
         </div>
       </div>
