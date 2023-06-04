@@ -5,22 +5,26 @@ const Speakers = () => {
   {
     name: "Andrew Batsin",
     designation: "CTO, Hoppscotch",
-    img: "https://avatars.githubusercontent.com/u/9131943?v=4"
+    img: "https://avatars.githubusercontent.com/u/9131943?v=4",
+    delay: 100
   },
   {
     name: "Athul Cyriac Ajay",
     designation: "Platform Engineer, Frappe",
-    img: "https://avatars.githubusercontent.com/u/40897573?v=4"
+    img: "https://avatars.githubusercontent.com/u/40897573?v=4",
+    delay:200
   },
   {
     name: "Abraham Raji",
     designation: "Debian Developer",
-    img: "https://avatars.githubusercontent.com/u/32333507?v=4"
+    img: "https://avatars.githubusercontent.com/u/32333507?v=4",
+    delay:300
   },
   {
     name: "Sahil Dhiman ",
     designation: "Debian Developer",
-    img: "https://seccdn.libravatar.org/avatar/fc0d3b6f6314f9f146ae50f07385f6a0?d=mm&s=96"
+    img: "https://seccdn.libravatar.org/avatar/fc0d3b6f6314f9f146ae50f07385f6a0?d=mm&s=96",
+    delay:400
   },
 ]
   return (
@@ -28,21 +32,23 @@ const Speakers = () => {
       <h1 className="text-3xl text-center font-semibold p-3">Speakers</h1>
       <div
         className="flex flex-col md:flex-row justify-evenly"
-        data-aos="zoom-in"
-        data-aos-duration="1100"
+    
       >
-        {speakersList.map(({ name, designation, img }) => (
-          <SpeakerCard {...{ name, designation, img }} />
+        {speakersList.map(({ name, designation, img ,delay}) => (
+          <SpeakerCard {...{ name, designation, img ,delay}} />
         ))}
       </div>
     </div>
   );
 };
 
-const SpeakerCard = ({name, designation, img}) => {
+const SpeakerCard = ({name, designation, img,delay}) => {
   return (
     <div
       className="mt-6 w-fit mx-auto"
+      data-aos="zoom-in"
+      data-aos-duration="1100"
+      data-aos-delay={delay}
       // data-aos="zoom-in"
       // data-aos-duration="1000"
     >
