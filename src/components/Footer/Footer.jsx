@@ -1,15 +1,6 @@
 import React from "react";
-import instagram from "../../assets/instagram.svg";
-import twitter from "../../assets/twitter.svg";
-import github from "../../assets/github.svg";
-
-
-import logo from "../../assets/react.svg";
-
-
 
 const Footer = () => {
-
   return (
     <div className="bg-red relative bottom-0 text-white flex pt-2  flex-col w-full justify-center items-center gap-6">
       <h1 className="text-2xl">DebUtsav</h1>
@@ -24,6 +15,29 @@ const Footer = () => {
         to know more{" "}
       </p>
       <div className="flex flex-row justify-center items-center">
+        <a
+          className="mx-2"
+          href="https://mastodon.social/@FOSS_MEC"
+          target="_blank"
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 28.125 28.125001"
+            fill="none"
+          >
+            <path
+              stroke="#fdd5df"
+              stroke-width="1"
+              d="m 26.621257,16.860652 c -0.385642,1.983972 -3.453956,4.155233 -6.977919,4.57603 -1.837594,0.219263 -3.646853,0.420797 -5.576122,0.332304 -3.155141,-0.144559 -5.6447656,-0.753101 -5.6447656,-0.753101 0,0.30715 0.018941,0.599601 0.056823,0.873111 0.4101895,3.113774 3.0875596,3.300306 5.6237026,3.387284 2.559783,0.08758 4.839085,-0.631119 4.839085,-0.631119 l 0.105162,2.314154 c 0,0 -1.79047,0.961452 -4.980007,1.138287 -1.758799,0.09668 -3.942638,-0.04425 -6.4862072,-0.717491 C 2.0644374,25.919976 1.1157132,20.039583 0.97054824,14.07297 0.92630171,12.301442 0.95357697,10.630985 0.95357697,9.2338853 c 0,-6.101171 3.99749133,-7.8895184 3.99749133,-7.8895184 C 6.9667095,0.41867514 10.425363,0.02939666 14.021,0 h 0.08834 c 3.595636,0.02939666 7.056562,0.41867514 9.072052,1.3443669 0,0 3.99734,1.7883474 3.99734,7.8895184 0,0 0.05016,4.5014777 -0.557476,7.6267667"
+            />
+            <path
+              d="M 22.463581,9.7072019 V 17.094704 H 19.536796 V 9.9243431 c 0,-1.5115035 -0.635969,-2.2786957 -1.908056,-2.2786957 -1.406494,0 -2.111408,0.9100843 -2.111408,2.7096446 v 3.924758 h -2.909511 v -3.924758 c 0,-1.7995603 -0.705066,-2.7096446 -2.11156,-2.7096446 -1.2720874,0 -1.9080554,0.7671922 -1.9080554,2.2786957 V 17.094704 H 5.6614195 V 9.7072019 c 0,-1.5098367 0.3844295,-2.7096449 1.1566222,-3.5973028 C 7.6143275,5.2222412 8.6571514,4.767199 9.9516652,4.767199 c 1.4977148,0 2.6319108,0.5756594 3.3818288,1.7271296 l 0.729007,1.2220829 0.729158,-1.2220829 c 0.749766,-1.1514702 1.883962,-1.7271296 3.381828,-1.7271296 1.294363,0 2.337186,0.4550422 3.133624,1.3427001 0.772041,0.8876579 1.15647,2.0874661 1.15647,3.5973028"
+              stroke="#fdd5df"
+              stroke-width="1"
+            />
+          </svg>
+        </a>
         <a className="mx-2" href="https://github.com/FossMec" target="_blank">
           <svg
             width="30"
@@ -41,7 +55,11 @@ const Footer = () => {
             />
           </svg>
         </a>
-        <a className="mx-2 svg-icon" href="https://twitter.com/FossMec" target="_blank">
+        <a
+          className="mx-2 svg-icon"
+          href="https://twitter.com/FossMec"
+          target="_blank"
+        >
           <svg
             width="30"
             height="30"
@@ -94,16 +112,15 @@ const Footer = () => {
           </svg>
         </a>
       </div>
-      <div className="flex flex-row justify-center  items-center text-sm">
+      <div className="flex flex-row justify-center items-center text-sm space-x-16">
         <a href={"/#about"} className="mx-2">
-          About |
+          About
         </a>
-
         <a href={"/becomesponsor"} className="mx-2">
           Become a Sponsor
         </a>
         <a href={"/Schedule"} className="mx-2  ">
-          | Schedule
+          Schedule
         </a>
       </div>
       <div className="p-2 text-center text-sm flex justify-center items-center w-full bg-[#760D29]">

@@ -1,35 +1,60 @@
 import React from "react";
 
 const Speakers = () => {
+   const speakersList = [
+  {
+    name: "Andrew Batsin",
+    designation: "CTO, Hoppscotch",
+    img: "https://avatars.githubusercontent.com/u/9131943?v=4",
+    delay: 100
+  },
+  {
+    name: "Athul Cyriac Ajay",
+    designation: "Platform Engineer, Frappe",
+    img: "https://avatars.githubusercontent.com/u/40897573?v=4",
+    delay:200
+  },
+  {
+    name: "Abraham Raji",
+    designation: "Debian Developer",
+    img: "https://avatars.githubusercontent.com/u/32333507?v=4",
+    delay:300
+  },
+  {
+    name: "Sahil Dhiman ",
+    designation: "Debian Developer",
+    img: "https://seccdn.libravatar.org/avatar/fc0d3b6f6314f9f146ae50f07385f6a0?d=mm&s=96",
+    delay:400
+  },
+]
   return (
     <div id="speakers" className="bg-red text-white py-5 ">
       <h1 className="text-3xl text-center font-semibold p-3">Speakers</h1>
       <div
         className="flex flex-col md:flex-row justify-evenly"
-        data-aos="zoom-in"
-        data-aos-duration="1100"
+    
       >
-        <SpeakerCard
-          name={"Athul Cyriac Ajay"}
-          designation={"DevOps Engineer at Frappe"}
-        />
-        <SpeakerCard name={"Andrew Bastin"} designation={"CTO, Hoppscotch"} />
-        <SpeakerCard name={"Abraham Raji"} designation={"Debian Developer"} />
+        {speakersList.map(({ name, designation, img ,delay}) => (
+          <SpeakerCard {...{ name, designation, img ,delay}} />
+        ))}
       </div>
     </div>
   );
 };
 
-const SpeakerCard = ({name, designation, img}) => {
+const SpeakerCard = ({name, designation, img,delay}) => {
   return (
     <div
       className="mt-6 w-fit mx-auto"
+      data-aos="zoom-in"
+      data-aos-duration="1100"
+      data-aos-delay={delay}
       // data-aos="zoom-in"
       // data-aos-duration="1000"
     >
       <div className=" outline outline-white outline-8 rounded-full">
         <img
-          src="https://img.freepik.com/free-vector/abstract-grunge-style-coming-soon-with-black-splatter_1017-26690.jpg?w=996&t=st=1683302715~exp=1683303315~hmac=0488ba43a2670a8ab5283b13eb121b71459988258f7e0a14d1572a8085c079e0"
+          src={img}
           className=" rounded-full w-[200px] h-[200px] overflow-hidden "
           alt="profile picture"
           srcset=""
