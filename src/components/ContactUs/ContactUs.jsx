@@ -30,8 +30,7 @@ const ContactCard = ({name, designation, phone, left}) => {
   return (
     <div
       className="flex flex-row justify-center items-center "
-      data-aos={left ? "fade-right" : "fade-left"}
-      data-aos-duration="1500"
+      
     >
       <img
         src={contactimg}
