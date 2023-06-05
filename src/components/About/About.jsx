@@ -10,9 +10,7 @@ const About = () => {
         alt=""
       />
       <div
-        data-aos="fade-left"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-sine"
+      
         className="text-left"
       >
         <h2 className="text-3xl md:text-5xl md:text-left text-black font-semibold py-4">
@@ -34,9 +32,7 @@ const About = () => {
       </div>
 
       <div
-        data-aos="fade-in"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-sine"
+      
         className="text-left"
       >
         <h2 className="text-3xl md:text-5xl text-left  text-black font-semibold py-4">
@@ -58,9 +54,7 @@ const About = () => {
         </p>
       </div>
       <img
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-sine"
+     
         src={foss}
         className="mx-auto hidden md:block my-auto rounded-full md:h-80"
         alt=""
