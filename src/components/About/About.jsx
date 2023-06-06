@@ -1,5 +1,5 @@
 import React from "react";
-import debutsav from "../../assets/logo.svg";
+import debutsav from "../../assets/debutsav.svg";
 import foss from "../../assets/foss.jpeg";
 const About = () => {
   return (

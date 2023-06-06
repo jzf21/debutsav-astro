@@ -17,14 +17,14 @@ const EventDetails = ({ showMap = false }) => {
           College, Thrikkakara
         </h3>
       </div>
-      <div className="w-1/2">
+      <div className=" w-full md:w-1/2">
         {showMap && (
           <>
             <iframe
               width="100%"
               height="300"
               src="https://www.openstreetmap.org/export/embed.html?bbox=76.32719278335573%2C10.027673598309685%2C76.32970333099365%2C10.029414167476213&amp;layer=mapnik"
-              style={{ border: "1px solid black" }}
+              
             ></iframe>
             <small>
               <a href="https://www.openstreetmap.org/#map=18/10.02840/76.32775">

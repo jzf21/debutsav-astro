@@ -41,7 +41,7 @@ const BecomeSponsor = () => {
   return (
     <div className="flex flex-col max-w-screen-xl min-h-[100vh]  px-4 py-8 mt-16  mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 ">
       <h2 className="text-5xl font-bold text-left ">Become a Sponsor</h2>
-      <p className="w-full text-lg tracking-wide font-light leading-2 my-4">
+      <p className="w-full  text-xm md:text-lg tracking-wide font-light leading-2 my-4">
         DebUtsav, a conference hosted by FOSSMEC aims to bring together
         developers, designers and entrepreneurs to share their ideas and
         expertise. <br></br>
@@ -61,7 +61,7 @@ const BecomeSponsor = () => {
         Thank you for your interest in DebUtsav and we look forward to
         collaborate with you to make this event a great success.
       </p>
-      <div className="overflow-x-scroll">
+      <div className="">
         <SponsorTable />
       </div>
       <button className="md:block register self-start text-sm my-4 md:text-xl text-white bg-red px-6 py-4">
