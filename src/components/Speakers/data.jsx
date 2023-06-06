@@ -1,6 +1,6 @@
 export const speakersList = [
   {
-    name: "Andrew Batsin",
+    name: "Andrew Bastin",
     designation: "CTO, Hoppscotch",
     img: "https://avatars.githubusercontent.com/u/9131943?v=4",
     url: "https://andrewbast.in/",
