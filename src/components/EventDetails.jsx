@@ -1,6 +1,6 @@
 import  { useState } from "react";
 const EventDetails = () => {
-  
+  const showMap =false;
   return (
     <div
       id="event-details"
@@ -42,7 +42,22 @@ const EventDetails = () => {
                 Model Engineering College , Thrikkakara
               </p>
             </div>
-            <button >View Map</button>
+            <div className=" w-full   ">
+              {!showMap && (
+                <>
+                  <iframe
+                    width="100%"
+                    height="300"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=76.32719278335573%2C10.027673598309685%2C76.32970333099365%2C10.029414167476213&amp;layer=mapnik"
+                  ></iframe>
+                  <small>
+                    <a href="https://www.openstreetmap.org/#map=18/10.02840/76.32775">
+                      View Larger Map
+                    </a>
+                  </small>
+                </>
+              )}
+            </div>
           </div>
 
           <button className="bg-[#A80030] shadow-[10px_10px_1px_00px_rgba(0,0,0,1)] text-[#fff] px-5 py-4  w-[60%] mt-10 ">
@@ -64,22 +79,6 @@ const EventDetails = () => {
           College, Thrikkakara
         </h3>
       </div> */}
-      <div className=" w-full md:w-1/2  ">
-        { (
-          <>
-            <iframe
-              width="100%"
-              height="300"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=76.32719278335573%2C10.027673598309685%2C76.32970333099365%2C10.029414167476213&amp;layer=mapnik"
-            ></iframe>
-            <small>
-              <a href="https://www.openstreetmap.org/#map=18/10.02840/76.32775">
-                View Larger Map
-              </a>
-            </small>
-          </>
-        )}
-      </div>
     </div>
   );
 };
