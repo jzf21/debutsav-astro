@@ -14,16 +14,47 @@ const Hero = () => {
             >
               Welcome to <br /> <span className="text-red">DebUtsav</span> 2023
             </h1>
-            <p
-              data-aos="fade-in"
-              data-aos-offset="200"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="600"
-              data-aos-delay="400"
-              className="text-xl font-semibold mb-2"
-            >
-              June 17th 2023
-            </p>
+            <div className="flex gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path d="M14 13h-4v-4h4v4zm6-4h-4v4h4v-4zm-12 6h-4v4h4v-4zm6 0h-4v4h4v-4zm-6-6h-4v4h4v-4zm16-8v13.386c0 2.391-6.648 9.614-9.811 9.614h-14.189v-23h24zm-2 6h-20v15h11.362c4.156 0 2.638-6 2.638-6s6 1.65 6-2.457v-6.543z" />
+              </svg>
+              <p
+                data-aos="fade-in"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600"
+                data-aos-delay="400"
+                className="text-xl font-semibold mb-2"
+              >
+                June 17th 2023
+              </p>
+            </div>
+
+            <div className="flex gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />
+              </svg>
+              <p
+                data-aos="fade-in"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600"
+                data-aos-delay="400"
+                className="text-xl font-semibold mb-2"
+              >
+                Model Engineering College , Thrikkakara
+              </p>
+            </div>
             <p
               data-aos="fade-in"
               data-aos-offset="200"

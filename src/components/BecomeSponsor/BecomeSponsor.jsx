@@ -2,7 +2,8 @@ import {tableHeadData, rowData} from "./data.js";
 
 function SponsorTable() {
   return (
-    <table className="table-auto divide-x divide-y border border-gray-200  divide-gray-200 my-8">
+  <div style={{overflowX:"auto"}}>
+      <table className="table-auto divide-x divide-y border border-gray-200  divide-gray-200 ">
       <thead className="divide-x divide-y divide-gray-200 border-b font-medium">
         <tr className="divide-x divide-y divide-gray-200 bg-red text-white">
           {tableHeadData.map((name) => (
@@ -15,7 +16,7 @@ function SponsorTable() {
           <SponsorTableRow {...row} />
         ))}
       </tbody>
-    </table>
+    </table></div>
   );
 }
 
