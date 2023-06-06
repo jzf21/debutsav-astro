@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Speakers = () => {
   return (
-    <div id="speakers" className="bg-red  text-white py-5">
+    <div id="speakers" className="bg-red bgsvg2  text-white py-5">
       <h1 className="text-4xl text-center font-semibold p-3">Speakers</h1>
       <div className="flex flex-col  ">
         <div className="flex flex-col md:flex-row">
