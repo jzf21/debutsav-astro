@@ -22,7 +22,7 @@ const Button = () => {
       {/* {showButton && ( */}
       <div>
         <button className="md:block rounded-full shadow-xl text-xl fixed bottom-6 right-6 bg-red text-white z-50 px-4 py-2 cursor-pointer p-4">
-          <a href="/">^</a>
+          <a href="#home">^</a>
         </button>
       </div>
       {/* )} */}
