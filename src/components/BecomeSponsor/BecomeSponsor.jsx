@@ -2,7 +2,7 @@ import {tableHeadData, rowData} from "./data.js";
 
 function SponsorTable() {
   return (
-  <div style={{overflowX:"auto"}}>
+  <div className="w-full" style={{overflowX:"auto"}}>
       <table className="table-auto divide-x divide-y border border-gray-200  divide-gray-200 ">
       <thead className="divide-x divide-y divide-gray-200 border-b font-medium">
         <tr className="divide-x divide-y divide-gray-200 bg-red text-white">
@@ -61,9 +61,9 @@ const BecomeSponsor = () => {
         Thank you for your interest in DebUtsav and we look forward to
         collaborate with you to make this event a great success.
       </p>
-      <div className="">
+ 
         <SponsorTable />
-      </div>
+      
       <button className="md:block register self-start text-sm my-4 md:text-xl text-white bg-red px-6 py-4">
         <a
           href="https://drive.google.com/file/d/1a_9n1-KkVyQvR9DKvCbvp69vXwnIYqBk/view?usp=sharing"
