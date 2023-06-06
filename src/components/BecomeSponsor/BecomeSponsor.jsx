@@ -1,4 +1,4 @@
-import { tableHeadData, rowData } from "./data.js";
+import {tableHeadData, rowData} from "./data.js";
 
 function SponsorTable() {
   return (
@@ -20,18 +20,14 @@ function SponsorTable() {
   );
 }
 
-function SponsorTableRow({ title, values, icon: Icon, startColumn = 0 }) {
+function SponsorTableRow({title, values, icon: Icon, startColumn = 0}) {
   return (
     <tr className="divide-x divide-gray-200">
       <td className="py-2 text-center">{title}</td>
       {values ? (
         values.map((value, index) => (
           <td className="py-2 text-center" key={index + startColumn}>
-            {value === "✓" ? (
-              <p style={{ color: "#4d7c0f" }}>{value}</p>
-            ) : (
-              value
-            )}
+            {value === "✓" ? <p style={{color: "#4d7c0f"}}>{value}</p> : value}
           </td>
         ))
       ) : (
@@ -65,7 +61,9 @@ const BecomeSponsor = () => {
         Thank you for your interest in DebUtsav and we look forward to
         collaborate with you to make this event a great success.
       </p>
-      <SponsorTable />
+      <div className="overflow-x-scroll">
+        <SponsorTable />
+      </div>
       <button className="md:block register self-start text-sm my-4 md:text-xl text-white bg-red px-6 py-4">
         <a
           href="https://drive.google.com/file/d/1a_9n1-KkVyQvR9DKvCbvp69vXwnIYqBk/view?usp=sharing"

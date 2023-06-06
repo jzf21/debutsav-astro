@@ -124,7 +124,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="p-2 text-center text-sm flex justify-center items-center w-full bg-[#760D29]">
-        Copyright@2023
+        Made with ❤️ by FOSSMEC
       </div>
     </div>
   );
