@@ -5,36 +5,38 @@ import { useState } from "react";
 
 const Speakers = () => {
   return (
-    <div id="speakers" className="bg-red text-white py-5">
-      <h1 className="text-3xl text-center font-semibold p-3">Speakers</h1>
-      <div className="flex flex-col md:flex-col ">
+    <div id="speakers" className="bg-red  text-white py-5">
+      <h1 className="text-4xl text-center font-semibold p-3">Speakers</h1>
+      <div className="flex flex-col  ">
         <div className="flex flex-col md:flex-row">
-          {speakersList.slice(0, 3).map(({ name, designation, img, url,linkedin }) => (
-            <SpeakerCard {...{ name, designation, img, url,linkedin }} />
-          ))}
+          {speakersList
+            .slice(0, 3)
+            .map(({ name, designation, img, url, linkedin }) => (
+              <SpeakerCard {...{ name, designation, img, url, linkedin }} />
+            ))}
         </div>
-        <div className="flex flex-col md:flex-row ">
-          {speakersList.slice(3).map(({ name, designation, img, url ,linkedin}) => (
-            <SpeakerCard {...{ name, designation, img, url,linkedin }} />
-          ))}
+        <div className="flex flex-col md:flex-row justify-start mx-auto w-[60%] ">
+          {speakersList
+            .slice(3)
+            .map(({ name, designation, img, url, linkedin }) => (
+              <SpeakerCard {...{ name, designation, img, url, linkedin }} />
+            ))}
         </div>
       </div>
     </div>
   );
 };
 
-
-
-const SpeakerCard = ({ name, designation, img, url,linkedin }) => {
+const SpeakerCard = ({ name, designation, img, url, linkedin }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
-      className="mt-6 w-fit mx-auto relative"
+      className="mt-6 w-fit mx-auto relative  "
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative w-[200px] h-[200px] mx-auto">
+      <div className="relative w-[200px] h-[200px] mx-auto  outline outline-white outline-8 rounded-full">
         {isHovered && (
           <div className="absolute inset-0 bg-white opacity-50 rounded-full transition duration-500"></div>
         )}
@@ -90,8 +92,5 @@ const SpeakerCard = ({ name, designation, img, url,linkedin }) => {
     </div>
   );
 };
-
-
-
 
 export default Speakers;
