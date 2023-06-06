@@ -1,32 +1,38 @@
-const EventDetails = () => {
+const EventDetails = ({ showMap = false }) => {
   return (
-    <div className="max-w-screen-2xl py-5 mt-10 flex flex-col justify-center items-center h-[80vh]">
-      <h2 className="text-4xl text-red p-5 mt-5">DebUtsav 2023</h2>
-      {/* <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.860557766758!2d76.32593747468596!3d10.028363690078526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c5006491601%3A0xcf23e14245d4694d!2sGovernment%20Model%20Engineering%20College!5e0!3m2!1sen!2sin!4v1683347066306!5m2!1sen!2sin"
-        width="60%"
-        height="300"
-        allowfullscreen=""
-        loading="lazy"
-        // referrerpolicy="no-referrer-when-downgrade"
-      ></iframe> */}
-      <iframe
-        width="60%"
-        height="300"
-    
-        src="https://www.openstreetmap.org/export/embed.html?bbox=76.32719278335573%2C10.027673598309685%2C76.32970333099365%2C10.029414167476213&amp;layer=mapnik"
-      ></iframe>
+    <div
+      id="event-details"
+      className="py-5 my-10 w-2/3 mx-auto flex flex-wrap justify-center space-y-5"
+    >
       <div className="flex flex-col justify-center items-center">
-        <h2 className="text-2xl text-red p-5 mt-5">Event Details</h2>
-        <p>Date: 17th June 2023</p>
-        <p>Time : 9:00am to 6:00pm</p>
-        <p>Venue: Government Model Engineering College, Thrikkakara</p>
+        <h2 className="text-4xl text-red mt-5">Event Details</h2>
+        <h3 className="text-xl mt-8">
+          <span className="text-red">Date: </span>17th June 2023
+        </h3>
+        <h3 className="text-xl mt-8">
+          <span className="text-red">Time: </span> 9:00am to 6:00pm
+        </h3>
+        <h3 className="text-xl mt-8">
+          <span className="text-red">Venue: </span>Government Model Engineering
+          College, Thrikkakara
+        </h3>
       </div>
-      <div className="flex flex-col justify-center items-center">
-        <h2 className="text-2xl text-red p-5 mt-5">Confirmed Speakers</h2>
-        {/* <p>Date: 17th June 2023</p>
-        <p>Time : 9:00am to 6:00pm</p>
-        <p>Venue: GMEC, Thrikkakara</p> */}
+      <div className="w-1/2">
+        {showMap && (
+          <>
+            <iframe
+              width="100%"
+              height="300"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=76.32719278335573%2C10.027673598309685%2C76.32970333099365%2C10.029414167476213&amp;layer=mapnik"
+              style={{ border: "1px solid black" }}
+            ></iframe>
+            <small>
+              <a href="https://www.openstreetmap.org/#map=18/10.02840/76.32775">
+                View Larger Map
+              </a>
+            </small>
+          </>
+        )}
       </div>
     </div>
   );

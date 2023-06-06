@@ -1,77 +1,75 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-import Hero from '../components/Hero/Hero';
-import Footer from '../components/Footer/Footer';
-import Sponsors from '../components/Sponsors/Sponsors';
-import Navbar from '../components/Navbar/Navbar';
-import Speakers from '../components/Speakers/Speakers';
-import ContactUs from '../components/ContactUs/ContactUs';
-import About from '../components/About/About';
-import CountdownTimer from '../components/Countdown/Countdown';
-
+import Hero from "../components/Hero/Hero";
+import Footer from "../components/Footer/Footer";
+import Sponsors from "../components/Sponsors/Sponsors";
+import Navbar from "../components/Navbar/Navbar";
+import Speakers from "../components/Speakers/Speakers";
+import ContactUs from "../components/ContactUs/ContactUs";
+import About from "../components/About/About";
+import CountdownTimer from "../components/Countdown/Countdown";
+import EventDetails from "../components/EventDetails";
 ---
+
 <style is:global>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-:root {
-  font-family: 'Poppins', sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+  :root {
+    font-family: "Poppins", sans-serif;
 
-  font-weight: 400;
+    font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgb(0, 0, 0);
-  background-color: #f0efef;
+    color-scheme: light dark;
+    color: rgb(0, 0, 0);
+    background-color: #f0efef;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-h1{
-  line-height: 20px;
-}
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  h1 {
+    line-height: 20px;
+  }
 
-a:focus{
-  outline: none;
-  border: none;
-}
+  a:focus {
+    outline: none;
+    border: none;
+  }
 
-.register{
-  box-shadow: 2px 4px 4px #EA9FB3;
-  border-radius: 50px;
-}
+  .register {
+    box-shadow: 2px 4px 4px #ea9fb3;
+    border-radius: 50px;
+  }
 
-.speakercard{
-  border-radius: 50%;
-}
-.fossmec{
-  background: linear-gradient(180deg, #fab416 0%, #ff8a00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.countdown {
+  .speakercard {
+    border-radius: 50%;
+  }
+  .fossmec {
+    background: linear-gradient(180deg, #fab416 0%, #ff8a00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .countdown {
     font-weight: 700;
     font-size: 3.85rem;
     color: #ffffff;
-    -webkit-text-stroke: 2px #CC1848;
-}
-
-
+    -webkit-text-stroke: 2px #cc1848;
+  }
 </style>
 <Layout title="DebUtsav">
-	<main>
-		
-		<Hero/>
-    <CountdownTimer targetDate={new Date('June 17, 2023 09:30:00').getTime()} client:only />
-   
-    <About/>
-    <Speakers/>
-		<Sponsors/>
-    <ContactUs/>
-		
-	</main>
+  <main>
+    <Hero />
+    <CountdownTimer
+      targetDate={new Date("June 17, 2023 09:30:00").getTime()}
+      client:only
+    />
+    <EventDetails />
+    <About />
+    <Speakers client:load />
+    <Sponsors />
+    <ContactUs />
+  </main>
 </Layout>
-
-
