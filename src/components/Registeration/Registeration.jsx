@@ -242,7 +242,7 @@ const RegistrationForm = () => {
                   fill-rule="nonzero"
                 />
               </svg>
-              <p className="text-[8px] mt-1">This doesn't gaurantee your ticket to DebUtsav </p>
+              <p className="text-[8px] mt-1">Thank you for registering for DebUtsav. Please note that this does not guarantee your tickets to the event. We'll send you an email as a confirmation after verifying the details you have provided above. So keep a lookout for the same! </p>
             </div>
           </>
         )}
