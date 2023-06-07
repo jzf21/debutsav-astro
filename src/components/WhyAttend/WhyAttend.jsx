@@ -31,7 +31,7 @@ const WhyAttend = () => {
   return (
     <>
     <h2 className='text-4xl font-semibold text-center uppercase my-10'>Why Attend DebUtsav? </h2>
-      <div className="grid grid-cols-2 gap-8 w-[60%] mx-auto   ">
+      <div className="flex flex-col md:grid    md:grid-cols-2 gap-8  justify-center items-center md:w-[60%] mx-auto   ">
         {debUtsavInformation.map((info) => (
             <WhyAttendCard title={info.title} description={info.description} />
         ))}
