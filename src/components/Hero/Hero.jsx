@@ -2,7 +2,10 @@ import image from "../../assets/Conference-amico.svg";
 const Hero = () => {
   return (
     <>
-      <div id="home" className=" text-black mt-10 sm:mt-10 lg:mt-10  pt-16 md:mt-10 xl:mt-4 md:pt-10  ">
+      <div
+        id="home"
+        className=" text-black mt-10 sm:mt-10 lg:mt-10  pt-16 md:mt-10 xl:mt-4 md:pt-10  "
+      >
         <div className="grid max-w-screen-xl min-h-[100vh]  px-4  mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1
@@ -58,7 +61,7 @@ const Hero = () => {
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"
               data-aos-duration="600"
-              data-aos-delay="500"
+              data-aos-delay="400"
               className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
             >
               DebUtsav is an upcoming conference that is set to bring together
@@ -67,7 +70,15 @@ const Hero = () => {
             </p>
             <div className="flex gap-2">
               <a href="/Register">
-                <button className="inline-flex register bg-red text-white  text-red-500 items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   bg-primary-700 hover:bg-primary-800 ">
+                <button
+                  data-aos="fade-in"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="600"
+                  data-aos-delay="450"
+                  data-aos-anchor="home"
+                  className="inline-flex register bg-red text-white  text-red-500 items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   bg-primary-700 hover:bg-primary-800 "
+                >
                   Register
                   {/* <svg
                 className="w-5 h-5 ml-2 -mr-1"
@@ -84,7 +95,15 @@ const Hero = () => {
                 </button>
               </a>
               <a href="/Schedule">
-                <button className="inline-flex  about-btn bg-transparent outline-maroon outline text-maroon  items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   ">
+                <button
+                  data-aos="fade-in"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="600"
+                  data-aos-delay="500"
+                  data-aos-anchor="home"
+                  className="inline-flex  about-btn bg-transparent outline-maroon outline text-maroon  items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   "
+                >
                   About
                   {/* <svg
                 className="w-5 h-5 ml-2 -mr-1"
@@ -108,7 +127,14 @@ const Hero = () => {
               Speak to Sales
             </a> */}
           </div>
-          <div className=" lg:mt-0 lg:col-span-5 lg:flex">
+          <div
+            data-aos="fade-in"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+            data-aos-delay="500"
+            className=" lg:mt-0 lg:col-span-5 lg:flex"
+          >
             <img
               data-aos="fade-zoom-in"
               data-aos-offset="200"
