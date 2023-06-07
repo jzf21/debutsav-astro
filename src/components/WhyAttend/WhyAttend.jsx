@@ -4,9 +4,9 @@ const WhyAttend = () => {
     const debUtsavInformation = [
       {
         id: 1,
-        title: "Talk session by Professionals",
+        title: "Learning Oppurtunities",
         description:
-          "At DebUtsav, you'll have the opportunity to attend talk sessions conducted by experienced professionals from various industries.",
+          "At DebUtsav, you'll have the opportunity to attend talk sessions conducted by experienced professionals from various industries.You can gain valuable insights, learn about new developments, and expand your knowledge in areas that interest you.",
       },
       {
         id: 2,
@@ -16,15 +16,15 @@ const WhyAttend = () => {
       },
       {
         id: 3,
-        title: "Networking with Industry Experts",
+        title: "Interact with Industry Experts",
         description:
           "DebUtsav provides a great platform for networking with industry experts and like-minded individuals. You'll have the chance to meet and interact with professionals from various fields, exchange ideas, and build your professional network.",
       },
       {
         id: 4,
-        title: "Certificate for Workshops and Activity Points",
+        title: "Collaboration",
         description:
-          "DebUtsav Workshops will help you gain valuable experience that you can add to your resume. Additionally, you'll receive a certificate of completion that can be used to showcase your new skills to potential employers. For all those who are worried about activity points, this is the chance!",
+          "Debutsav provide a platform for collaboration and cooperation among attendees. You can participate in discussions, contribute to ongoing projects, and even initiate new collaborations. It's an excellent opportunity to work with others who share your passion for open-source software.",
       },
     ];
 
@@ -43,7 +43,7 @@ const WhyAttend = () => {
 const WhyAttendCard = ({ title, description }) => {
     return (
       <div className="  w-[370px] h-[370px] rounded-lg pt-2 ">
-        <div class="bg-white bg-gradient-to-b from-[#fc8385] to-red rounded-lg shadow p-6 mx-auto w-[350px] h-[350px] my-auto ">
+        <div class="bg-white flex flex-col justify-center bg-gradient-to-b from-[#fc8385] to-red rounded-lg shadow p-6 mx-auto w-[350px] h-[350px] my-auto ">
           <h2 class="text-xl text-white font-semibold mb-2 text-center px-4">{title}</h2>
           <p class="text-[#f6f6f6] text-center">{description}</p>
         </div>
