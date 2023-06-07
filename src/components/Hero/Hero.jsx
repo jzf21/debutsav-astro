@@ -2,7 +2,10 @@ import image from "../../assets/Conference-amico.svg";
 const Hero = () => {
   return (
     <>
-      <div id="home" className=" text-black mt-10 sm:mt-10 lg:mt-10  pt-16 md:mt-10 xl:mt-4 md:pt-10  ">
+      <div
+        id="home"
+        className=" text-black mt-10 sm:mt-10 lg:mt-10  pt-16 md:mt-10 xl:mt-4 md:pt-10  "
+      >
         <div className="grid max-w-screen-xl min-h-[100vh]  px-4  mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1
@@ -83,7 +86,7 @@ const Hero = () => {
               </svg> */}
                 </button>
               </a>
-              <a href="/Schedule">
+              <a href="/#about">
                 <button className="inline-flex  about-btn bg-transparent outline-maroon outline text-maroon  items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   ">
                   About
                   {/* <svg

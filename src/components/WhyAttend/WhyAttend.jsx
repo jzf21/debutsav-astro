@@ -24,7 +24,7 @@ const WhyAttend = () => {
       id: 4,
       title: "Collaboration",
       description:
-        "Debutsav provide a platform for collaboration and cooperation among attendees. You can participate in discussions, contribute to ongoing projects, and even initiate new collaborations. It's an excellent opportunity to work with others who share your passion for open-source software.",
+        "DebUtsav provides a platform for collaboration and cooperation among attendees. You can participate in discussions, contribute to ongoing projects, and even initiate new collaborations. It's an excellent opportunity to work with others who share your passion for open-source software.",
     },
   ];
 
