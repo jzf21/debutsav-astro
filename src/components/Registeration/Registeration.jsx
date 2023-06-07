@@ -192,7 +192,7 @@ const RegistrationForm = () => {
             placeholder="PGP fingerprint"
           />
         </div>
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <label className="block text-red font-bold mb-2" htmlFor="diet">
             Tshirt Size
           </label>
@@ -206,7 +206,7 @@ const RegistrationForm = () => {
             <option value="M">Medium</option>
             <option value="L">Large</option>
           </select>
-        </div>
+        </div> */}
 
         <div className="flex items-center justify-between">
           <button
@@ -242,7 +242,7 @@ const RegistrationForm = () => {
                   fill-rule="nonzero"
                 />
               </svg>
-              <p className="text-[8px] mt-1">Thank you for registering for DebUtsav. Please note that this does not guarantee your tickets to the event. We'll send you an email as a confirmation after verifying the details you have provided above. So keep a lookout for the same! </p>
+              <p className="text-[12px] mt-1">Thank you for registering for DebUtsav. Please note that this does not guarantee your tickets to the event. We'll send you an email as a confirmation after verifying the details you have provided above. So keep a lookout for the same! </p>
             </div>
           </>
         )}
