@@ -19,7 +19,7 @@ const Sponsors = () => {
       <div
         data-aos="flip-down"
         data-aos-duration="1500"
-        className="p-4 md:p-10 md:mx-10"
+        className="p-4  md:mx-10"
       >
         <img src={sponsor} width={width} alt="fossunited" srcset="" />
       </div>
