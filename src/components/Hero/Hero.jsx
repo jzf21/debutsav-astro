@@ -84,7 +84,7 @@ const Hero = () => {
                 </button>
               </a>
               <a href="/Schedule">
-                <button className="inline-flex register bg-transparent outline-maroon outline text-maroon  items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   ">
+                <button className="inline-flex  about-btn bg-transparent outline-maroon outline text-maroon  items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   ">
                   About
                   {/* <svg
                 className="w-5 h-5 ml-2 -mr-1"
