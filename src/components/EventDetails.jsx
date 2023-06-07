@@ -9,9 +9,7 @@ const EventDetails = () => {
       <div className="grid grid-cols-3 bg-red bgsvg2 h-auto md:min-h-[100vh] mt-10 pl-0 pr-2 md:pl-10 py-5">
         <div className="flex flex-col col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-2 bg-white m-5 py-5 pb-20 px-5">
           <h3 className="text-6xl md:text-8xl font-bold text-[#A80030]">
-            DEB
-            <br />
-            UTSAV
+            DEBUTSAV
             <br />
             2023
           </h3>
