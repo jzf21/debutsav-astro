@@ -6,19 +6,23 @@ const ContactUs = () => {
       <h2 className="  text-5xl text-center text-black font-semibold py-4  ">
         Contact Us{" "}
       </h2>
-      <div className="flex flex-col md:flex-row justify-evenly py-5 flex-wrap items-center gap-4">
+      <div className="flex flex-col md:w-[80%] md:flex-row justify-evenly py-5 mx-auto flex-wrap items-center gap-4">
         <ContactCard
           name="Mekha L"
           designation={"Marketing Head"}
-          phone={"99954 60475"}
-          left={true}
+          phone={"9995460475"}
+         
         />
         <ContactCard
           name="Jithin Jagadeesh"
           designation={"Chairperson"}
-          phone={"92075 89302"}
-          left={false}
+          phone={"9207589302"}
+        
         />
+        <ContactCard
+        name="Abraham Raji"
+        designation={"Debian Developer"}
+        phone={"6282996058"}/>
       </div>
     </div>
   );
