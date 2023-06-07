@@ -4,8 +4,8 @@ import foss from "../../assets/foss.jpeg";
 const About = () => {
   return (
     <div
-      className="grid mx-auto min-h-[100vh] px-5 max-w-screen-xl grid-cols-1 md:grid-cols-2 py-5"
-      id="about"
+      className="grid mx-auto min-h-[100vh] px-5 max-w-screen-xl grid-cols-1 md:grid-cols-2 py-5"  id="about"
+      
     >
       <img
         src={debutsav}
