@@ -94,7 +94,7 @@ const Hero = () => {
               </svg> */}
                 </button>
               </a>
-              <a href="/Schedule">
+              <a href="/#about">
                 <button
                   data-aos="fade-in"
                   data-aos-offset="200"
