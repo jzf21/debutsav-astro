@@ -18,13 +18,13 @@ const WhyAttend = () => {
         id: 3,
         title: "Interact with Industry Experts",
         description:
-          "DebUtsav provides a great platform for networking with industry experts and like-minded individuals. You'll have the chance to meet and interact with professionals from various fields, exchange ideas, and build your professional network.",
+          "DebUtsav provides a great platform for interacting with industry experts and like-minded individuals. You'll have the chance to meet and interact with professionals from various fields, exchange ideas, and build your professional network.",
       },
       {
         id: 4,
         title: "Collaboration",
         description:
-          "Debutsav provide a platform for collaboration and cooperation among attendees. You can participate in discussions, contribute to ongoing projects, and even initiate new collaborations. It's an excellent opportunity to work with others who share your passion for open-source software.",
+          "DebUtsav provides a platform for collaboration and cooperation among attendees. You can participate in discussions, contribute to ongoing projects, and even initiate new collaborations. It's an excellent opportunity to work with others who share your passion for open-source software.",
       },
     ];
 
