@@ -30,24 +30,11 @@ const WhyAttend = () => {
 
   return (
     <>
-    <h2 className='text-4xl font-semibold text-center uppercase my-10'>Why Attend? </h2>
-      <div className="grid grid-cols-2 gap-8 ">
-        <WhyAttendCard
-          title="Learn"
-          description="Learn from the best in the industry and get a chance to interact with them."
-        />
-        <WhyAttendCard
-          title="Network"
-          description="Network with like minded people and build your network."
-        />
-        <WhyAttendCard
-          title="Fun"
-          description="Have fun with the community and make new friends."
-        />
-        <WhyAttendCard
-          title="Swags"
-          description="Get a chance to win some cool swags."
-        />
+    <h2 className='text-4xl font-semibold text-center uppercase my-10'>Why Attend DebUtsav? </h2>
+      <div className="grid grid-cols-2 gap-8 w-[60%] mx-auto   ">
+        {debUtsavInformation.map((info) => (
+            <WhyAttendCard title={info.title} description={info.description} />
+        ))}
       </div>
     </>
   );
@@ -55,14 +42,11 @@ const WhyAttend = () => {
 
 const WhyAttendCard = ({ title, description }) => {
     return (
-      <div class="bg-white rounded-lg shadow p-6 mx-auto w-[400px]">
-        <h2 class="text-xl font-semibold mb-2">Awesome Swags</h2>
-        <p class="text-gray-600">
-          DebUtsav provides attendees with some awesome swags, such as T-shirts,
-          stickers, and other merchandise. These souvenirs not only serve as a
-          reminder of the event but also help to build a sense of community
-          among attendees.
-        </p>
+      <div className="  w-[370px] h-[370px] rounded-lg pt-2 ">
+        <div class="bg-white bg-gradient-to-b from-[#fc8385] to-red rounded-lg shadow p-6 mx-auto w-[350px] h-[350px] my-auto ">
+          <h2 class="text-xl text-white font-semibold mb-2 text-center px-4">{title}</h2>
+          <p class="text-[#f6f6f6] text-center">{description}</p>
+        </div>
       </div>
     );
 }
