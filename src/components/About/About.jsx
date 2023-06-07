@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       className="grid mx-auto min-h-[100vh] px-5 max-w-screen-xl grid-cols-1 md:grid-cols-2 py-5"
-      id="about"
+      
     >
       <img
         src={debutsav}
@@ -26,7 +26,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="text-left">
+      <div className="text-left" id="about">
         <h2 className="text-3xl md:text-5xl text-left  text-black font-semibold py-4">
           About <span className="fossmec">FOSS MEC</span>
         </h2>
