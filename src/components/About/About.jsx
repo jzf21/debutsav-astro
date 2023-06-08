@@ -13,9 +13,9 @@ const About = () => {
         alt=""
       />
       <div className="text-left">
-        <h2 className="text-3xl md:text-5xl md:text-left text-black font-semibold py-4">
+        <h1 className="text-3xl md:text-5xl md:text-left text-black font-semibold py-4">
           About <span className="text-red">DebUtsav</span>
-        </h2>
+        </h1>
         <p className="text-lg tracking-wide  md:text-lg">
           Join us at DebUtsav, the prestigious conference hosted by Model
           Engineering College and organized by FOSSMEC. Celebrate the power of
