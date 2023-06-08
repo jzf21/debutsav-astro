@@ -1,5 +1,5 @@
-import { createClient } from "@supabase/supabase-js";
-import { useState } from "react";
+import {createClient} from "@supabase/supabase-js";
+import {useState} from "react";
 
 const RegistrationForm = () => {
   const supabaseurl = import.meta.env.PUBLIC_VITE_SUPABASE_URL;
@@ -10,20 +10,20 @@ const RegistrationForm = () => {
     email: "",
     phone: "",
     veg: true,
-    student_or_professional:true ,
+    student_or_professional: true,
     college: "",
     size: "S",
   });
   const [error, setError] = useState(false);
   const handleChange = (e) => {
-    setUserDetails({ ...UserDetails, [e.target.name]: e.target.value });
+    setUserDetails({...UserDetails, [e.target.name]: e.target.value});
     // console.log(UserDetails);
   };
 
   const register = async () => {
     console.log("clicked");
 
-    const { data, error } = await supabase
+    const {data, error} = await supabase
       .from("registered")
       .insert([UserDetails]);
     // console.log(UserDetails);
@@ -35,11 +35,10 @@ const RegistrationForm = () => {
       if (error.code === "23514") {
         alert("Please enter valid details");
       }
-      if(error.code === "23502"){
-        alert("Please enter all details")
-      }
-      else{
-        alert("Please enter valid details")
+      if (error.code === "23502") {
+        alert("Please enter all details");
+      } else {
+        alert("Please enter valid details");
       }
     } else {
       setError(true);
@@ -152,7 +151,7 @@ const RegistrationForm = () => {
         </div>
         <div className="mb-4">
           <label className="block text-red font-bold mb-2" htmlFor="college">
-            Have you contributed to any FOSS(Free and Open Source) project?
+            Have you contributed to any FOSS project?
           </label>
           <input
             autoComplete="new-password"
@@ -242,7 +241,12 @@ const RegistrationForm = () => {
                   fill-rule="nonzero"
                 />
               </svg>
-              <p className="text-[12px] mt-1">Thank you for registering for DebUtsav. Please note that this does not guarantee your tickets to the event. We'll send you an email as a confirmation after verifying the details you have provided above. So keep a lookout for the same! </p>
+              <p className="text-[12px] mt-1">
+                Thank you for registering for DebUtsav. Please note that this
+                does not guarantee your tickets to the event. We'll send you an
+                email as a confirmation after verifying the details you have
+                provided above. So keep a lookout for the same!{" "}
+              </p>
             </div>
           </>
         )}
