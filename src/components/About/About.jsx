@@ -10,7 +10,7 @@ const About = () => {
       <img
         src={debutsav}
         className="hidden md:block mx-auto my-auto  md:h-80 "
-        alt=""
+        alt="Debutsav Kochi Logo"
       />
       <div className="text-left">
         <h1 className="text-3xl md:text-5xl md:text-left text-black font-semibold py-4">
@@ -44,7 +44,7 @@ const About = () => {
       <img
         src={foss}
         className="mx-auto hidden md:block my-auto rounded-full md:h-80"
-        alt=""
+        alt="Free and Open Source Cell(FOSS) Logo"
       />
     </div>
   );
