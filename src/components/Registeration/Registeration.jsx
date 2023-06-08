@@ -17,7 +17,7 @@ const RegistrationForm = () => {
   const [error, setError] = useState(false);
   const handleChange = (e) => {
     setUserDetails({ ...UserDetails, [e.target.name]: e.target.value });
-    console.log(UserDetails);
+    // console.log(UserDetails);
   };
 
   const register = async () => {
@@ -26,7 +26,7 @@ const RegistrationForm = () => {
     const { data, error } = await supabase
       .from("registered")
       .insert([UserDetails]);
-    console.log(UserDetails);
+    // console.log(UserDetails);
     if (error) {
       console.log(error);
       if (error.code === "23505") {
@@ -43,7 +43,7 @@ const RegistrationForm = () => {
       }
     } else {
       setError(true);
-      console.log("Logged");
+      // console.log("Logged");
     }
   };
   return (
