@@ -33,12 +33,12 @@ const RegistrationForm = () => {
         alert("Email or Phone number already registered");
       }
       if (error.code === "23514") {
-        alert("Please enter valid details");
+        alert("Please enter your contact  details");
       }
       if (error.code === "23502") {
         alert("Please enter all details");
       } else {
-        alert("Please enter valid details");
+        alert("Please enter your contact details");
       }
     } else {
       setError(true);
@@ -75,6 +75,7 @@ const RegistrationForm = () => {
             id="email"
             type="email"
             placeholder="Email"
+            required
           />
         </div>
         <div className="mb-4">
@@ -89,6 +90,7 @@ const RegistrationForm = () => {
             type="text"
             name="phone"
             placeholder="Phone"
+            required
           />
         </div>
         <div className="mb-4">
