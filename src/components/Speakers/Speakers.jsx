@@ -6,7 +6,7 @@ import { useState } from "react";
 const Speakers = () => {
   return (
     <div id="speakers" className="bg-red bgsvg2  text-white py-5">
-      <h1 className="text-4xl text-center font-semibold uppercase p-3">Speakers</h1>
+      <h3 className="text-4xl text-center font-semibold uppercase p-3">Speakers</h3>
       <div className="flex flex-col  ">
         <div className="flex flex-col md:flex-row">
           {speakersList
@@ -84,9 +84,9 @@ const SpeakerCard = ({ name, designation, img, url, linkedin }) => {
         />
       </div>
       <div className="mt-8">
-        <h2 className="text-white font-bold text-[1rem] md:text-lg text-center tracking-wide">
+        <h3 className="text-white font-bold text-[1rem] md:text-lg text-center tracking-wide">
           {name}
-        </h2>
+        </h3>
         <p className="text-center text-gray-400 text-xs mt-2">{designation}</p>
       </div>
     </div>

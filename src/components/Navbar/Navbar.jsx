@@ -29,7 +29,7 @@ const Navbar = () => {
         scrollbar ? "bg-white text-black" : "bg-white"
       }`}
     >
-      <a href='/'><img  src={logo} alt="true" className="h-[50px]" /></a>
+      <a href='/'><img  src={logo} alt="debutsav kochi logo" className="h-[50px]" /></a>
       <button
         onClick={handleHamburger}
         className="text-black text-4xl block md:hidden mr-3"

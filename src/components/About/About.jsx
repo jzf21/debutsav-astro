@@ -10,12 +10,12 @@ const About = () => {
       <img
         src={debutsav}
         className="hidden md:block mx-auto my-auto  md:h-80 "
-        alt=""
+        alt="Debutsav Kochi Logo"
       />
       <div className="text-left">
-        <h2 className="text-3xl md:text-5xl md:text-left text-black font-semibold py-4">
+        <h1 className="text-3xl md:text-5xl md:text-left text-black font-semibold py-4">
           About <span className="text-red">DebUtsav</span>
-        </h2>
+        </h1>
         <p className="text-lg tracking-wide  md:text-lg">
           Join us at DebUtsav, the prestigious conference hosted by Model
           Engineering College and organized by FOSSMEC. Celebrate the power of
@@ -44,7 +44,7 @@ const About = () => {
       <img
         src={foss}
         className="mx-auto hidden md:block my-auto rounded-full md:h-80"
-        alt=""
+        alt="Free and Open Source Cell(FOSS) Logo"
       />
     </div>
   );
