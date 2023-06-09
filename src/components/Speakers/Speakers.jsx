@@ -84,9 +84,9 @@ const SpeakerCard = ({ name, designation, img, url, linkedin }) => {
         />
       </div>
       <div className="mt-8">
-        <h2 className="text-white font-bold text-[1rem] md:text-lg text-center tracking-wide">
+        <h3 className="text-white font-bold text-[1rem] md:text-lg text-center tracking-wide">
           {name}
-        </h2>
+        </h3>
         <p className="text-center text-gray-400 text-xs mt-2">{designation}</p>
       </div>
     </div>
