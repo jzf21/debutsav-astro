@@ -61,7 +61,7 @@ const Sponsors = () => {
           <h2 className="text-black text-lg text-center font-semibold">
            Adarsh S
           </h2>
-          {/* <p className="text-black text-sm text-center">Front-end Developer</p> */}
+          <p className="text-black text-sm text-center">FOSSMEC Alumni</p>
           {/* <div className="mt-4 flex justify-center">
             <a
               href="#"
