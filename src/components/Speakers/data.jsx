@@ -2,7 +2,7 @@ export const speakersList = [
   {
     name: "Andrew Bastin",
     designation: "CTO, Hoppscotch",
-    img: "https://avatars.githubusercontent.com/u/9131943?v=4",
+    img: "https://cloud.disroot.org/apps/files_sharing/publicpreview/tkPPNJbggKnygor?file=/&fileId=256717046&x=3360&y=2100&a=true",
     url: "https://andrewbast.in/",
     linkedin:
       "https://www.linkedin.com/in/andrew-bastin-7456771a8/?originalSubdomain=ca",
@@ -17,7 +17,7 @@ export const speakersList = [
   {
     name: "Sahil Dhiman",
     designation: "Debian Developer",
-    img: "https://seccdn.libravatar.org/avatar/fc0d3b6f6314f9f146ae50f07385f6a0?d=mm&s=96",
+    img: "https://cloud.disroot.org/apps/files_sharing/publicpreview/fFmgrDfHzWNBN8R?file=/&fileId=256716670&x=3360&y=2100&a=true",
     url: "https://blog.sahilister.in/",
     linkedin: "",
   },
