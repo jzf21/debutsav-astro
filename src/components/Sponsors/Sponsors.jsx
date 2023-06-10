@@ -1,27 +1,27 @@
-import fossunited from '../../assets/black-on-white.svg'
+import fossunited from "../../assets/black-on-white.svg";
+import frappe from "../../assets/frappe-logo.svg";
+import iedc from "../../assets/iedc.svg";
 
 const Sponsors = () => {
-  const platinumSponsors = [
-  
-  ];
-  const goldSponsors = [
-   
-  ];
-  const silverSponsors = [
-
-  ];
-  const bronzeSponsors = [
-    fossunited,
-  ];
+  const platinumSponsors = [];
+  const goldSponsors = [];
+  const silverSponsors = [];
+  const bronzeSponsors = [fossunited, frappe];
 
   const renderSponsors = (sponsors, width) =>
     sponsors?.map((sponsor) => (
       <div
         data-aos="flip-down"
         data-aos-duration="1100"
-        className="p-4  md:mx-10"
+        className="p-4  md:mx-10 flex"
       >
-        <img src={sponsor} width={width} alt="fossunited" srcset="" />
+        <img
+          src={sponsor}
+          width={width}
+          alt="fossunited"
+          srcset=""
+          className="m-auto	"
+        />
       </div>
     ));
 
@@ -44,12 +44,28 @@ const Sponsors = () => {
           {renderSponsors(silverSponsors, 200)}
         </div>
         <h2 className="text-2xl font-semibold">Bronze</h2> */}
-        <div className="grid grid-cols-1    ">
+        <div className="grid grid-cols-1  md:grid-cols-2     ">
           {renderSponsors(bronzeSponsors, 200)}
         </div>
       </div>
+      {/* ----------------------- */}
       <div className="flex flex-col justify-center items-center gap-16 my-4 ">
-        <h3 className="text-4xl font-bold text-center mb-20 uppercase">
+        <h3 className="text-4xl font-bold text-center  mb-12 uppercase">
+          Tech Partners
+        </h3>
+        {/* <div className="bg-pink-500 w-64 rounded-lg shadow-lg p-6 "> */}
+        <div className="flex flex-col justify-center items-center gap-16 ">
+          <img
+            className="w-44 h-44 rounded mx-auto mb-4  "
+            src={iedc}
+            alt="IEDC"
+          />
+        </div>
+      </div>
+      {/* ----------------------- */}
+
+      <div className="flex flex-col justify-center items-center gap-16 my-4 ">
+        <h3 className="text-4xl font-bold text-center mb-16 uppercase">
           Special Thanks to
         </h3>
         <div className="bg-pink-500 w-64 rounded-lg shadow-lg p-6">
@@ -59,7 +75,7 @@ const Sponsors = () => {
             alt="Profile Picture"
           />
           <h2 className="text-black text-lg text-center font-semibold">
-           Adarsh S
+            Adarsh S
           </h2>
           <p className="text-black text-sm text-center">FOSSMEC Alumni</p>
           {/* <div className="mt-4 flex justify-center">
