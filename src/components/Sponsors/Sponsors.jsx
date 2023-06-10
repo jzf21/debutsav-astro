@@ -1,6 +1,7 @@
 import fossunited from "../../assets/black-on-white.svg";
 import frappe from "../../assets/frappe-logo.svg";
 import iedc from "../../assets/iedc.svg";
+import adarsh from "../../assets/adarsh.jpeg";
 
 const Sponsors = () => {
   const platinumSponsors = [];
@@ -71,7 +72,7 @@ const Sponsors = () => {
         <div className="bg-pink-500 w-64 rounded-lg shadow-lg p-6">
           <img
             className="w-36 h-36 rounded-full mx-auto mb-4 outline outline-8 outline-red "
-            src="https://media.licdn.com/dms/image/C5603AQHiA30KlPjo7A/profile-displayphoto-shrink_400_400/0/1642144856627?e=1691625600&v=beta&t=IlwI5v4RwIK45BLf1x8q7a-l8IQ1foFo7FcUDh9-1hA"
+            src={adarsh}
             alt="Profile Picture"
           />
           <h2 className="text-black text-lg text-center font-semibold">
