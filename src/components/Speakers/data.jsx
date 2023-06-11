@@ -1,3 +1,5 @@
+import mufeed from "../../assets/mufeed.jpg";
+
 export const speakersList = [
   {
     name: "Andrew Bastin",
@@ -15,6 +17,13 @@ export const speakersList = [
     linkedin: "https://www.linkedin.com/in/athul-cyriac-ajay/",
   },
   {
+    name: "Mufeed V.H.",
+    designation: "Founder, Lyminal",
+    img: mufeed,
+    url: "https://www.mufeedvh.com/",
+    linkedin: "",
+  },
+  {
     name: "Sahil Dhiman",
     designation: "Debian Developer",
     img: "https://cloud.disroot.org/apps/files_sharing/publicpreview/fFmgrDfHzWNBN8R?file=/&fileId=256716670&x=3360&y=2100&a=true",
@@ -28,6 +37,7 @@ export const speakersList = [
     url: "https://kurianbenoy.com",
     linkedin: "https://www.linkedin.com/in/kurianbenoy/",
   },
+
   {
     name: "Abraham Raji",
     designation: "Debian Developer",

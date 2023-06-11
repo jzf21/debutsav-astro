@@ -1,25 +1,28 @@
 import React from "react";
-import { speakersList } from "./data.jsx";
+import mufeed from "../../assets/mufeed.jpg";
+import {speakersList} from "./data.jsx";
 
-import { useState } from "react";
+import {useState} from "react";
 
 const Speakers = () => {
   return (
     <div id="speakers" className="bg-red bgsvg2  text-white py-5">
-      <h3 className="text-4xl text-center font-semibold uppercase p-3">Speakers</h3>
+      <h3 className="text-4xl text-center font-semibold uppercase p-3">
+        Speakers
+      </h3>
       <div className="flex flex-col  ">
         <div className="flex flex-col md:flex-row">
           {speakersList
             .slice(0, 3)
-            .map(({ name, designation, img, url, linkedin }) => (
-              <SpeakerCard {...{ name, designation, img, url, linkedin }} />
+            .map(({name, designation, img, url, linkedin}) => (
+              <SpeakerCard {...{name, designation, img, url, linkedin}} />
             ))}
         </div>
-        <div className="flex flex-col md:flex-row justify-start mx-auto w-[60%] ">
+        <div className="flex flex-col md:flex-row mt-4">
           {speakersList
             .slice(3)
-            .map(({ name, designation, img, url, linkedin }) => (
-              <SpeakerCard {...{ name, designation, img, url, linkedin }} />
+            .map(({name, designation, img, url, linkedin}) => (
+              <SpeakerCard {...{name, designation, img, url, linkedin}} />
             ))}
         </div>
       </div>
@@ -27,7 +30,7 @@ const Speakers = () => {
   );
 };
 
-const SpeakerCard = ({ name, designation, img, url, linkedin }) => {
+const SpeakerCard = ({name, designation, img, url, linkedin}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
