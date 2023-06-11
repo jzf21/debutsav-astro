@@ -38,6 +38,7 @@ const ContactCard = ({name, designation, phone, left}) => {
     >
       <img
         src={contactimg}
+        alt="Debutsav theme pattern design"
         className="w-[100px] h-auto bg-white flex-start border border-black "
       />
       <div className="flex flex-col justify-center h-[100px]  p-4 min-w-[250px] border-r border-y border-black  ">
