@@ -7,23 +7,28 @@ const Sponsors = () => {
   const platinumSponsors = [];
   const goldSponsors = [];
   const silverSponsors = [];
-  const bronzeSponsors = [fossunited, frappe];
+  const bronzeSponsors = [
+    { img: fossunited, link: "https://fossunited.org/" },
+    { img: frappe ,link:"https://frappe.io/"}
+  ];
 
   const renderSponsors = (sponsors, width) =>
     sponsors?.map((sponsor) => (
-      <div
+      <a href={sponsor.link} target="_blank" rel="noreferrer" key={sponsor.link}
         data-aos="flip-down"
         data-aos-duration="1100"
         className="p-4  md:mx-10 flex"
       >
-        <img
-          src={sponsor}
-          width={width}
-          alt="fossunited"
-          srcset=""
-          className="m-auto	"
-        />
-      </div>
+       
+          <img
+            src={sponsor.img}
+            width={width}
+            alt="fossunited"
+            srcset=""
+            className="m-auto	"
+          />
+      
+      </a>
     ));
 
   return (
@@ -56,11 +61,13 @@ const Sponsors = () => {
         </h3>
         {/* <div className="bg-pink-500 w-64 rounded-lg shadow-lg p-6 "> */}
         <div className="flex flex-col justify-center items-center gap-16 ">
-          <img
-            className="w-44 h-44 rounded mx-auto mb-4  "
-            src={iedc}
-            alt="IEDC"
-          />
+          <a href="" target="_blank">
+            <img
+              className="w-44 h-44 rounded mx-auto mb-4  "
+              src={iedc}
+              alt="IEDC"
+            />
+          </a>
         </div>
       </div>
       {/* ----------------------- */}

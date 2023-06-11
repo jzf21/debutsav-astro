@@ -8,7 +8,7 @@ const Hero = () => {
       >
         <div className="grid max-w-screen-xl min-h-[100vh]  px-4  mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <h1
+            <h2
               className="max-w-2xl mb-4 text-3xl font-semibold  text-black md:text-6xl xl:text-7xl  "
               data-aos="fade-down"
               data-aos-offset="200"
@@ -16,7 +16,7 @@ const Hero = () => {
               data-aos-duration="600"
             >
               Welcome to <br /> <span className="text-red">DebUtsav</span> 2023
-            </h1>
+            </h2>
             <div
               data-aos="fade-in"
               data-aos-offset="200"
