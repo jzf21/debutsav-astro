@@ -2,32 +2,38 @@ import fossunited from "../../assets/black-on-white.svg";
 import frappe from "../../assets/frappe-logo.svg";
 import iedc from "../../assets/iedc.svg";
 import adarsh from "../../assets/adarsh.jpeg";
+import aguaindia from "../../assets/aguaindia.svg";
+import mantis from "../../assets/mantis.jpeg";
 
 const Sponsors = () => {
   const platinumSponsors = [];
   const goldSponsors = [];
   const silverSponsors = [];
   const bronzeSponsors = [
-    { img: fossunited, link: "https://fossunited.org/" },
-    { img: frappe ,link:"https://frappe.io/"}
+    {img: fossunited, link: "https://fossunited.org/"},
+    {img: frappe, link: "https://frappe.io/"},
+    // {img: aguaindia, link: "https://www.aguaindia.com/"},
+    {img: mantis, link: "https://www.mantis.com/"},
   ];
 
   const renderSponsors = (sponsors, width) =>
     sponsors?.map((sponsor) => (
-      <a href={sponsor.link} target="_blank" rel="noreferrer" key={sponsor.link}
+      <a
+        href={sponsor.link}
+        target="_blank"
+        rel="noreferrer"
+        key={sponsor.link}
         data-aos="flip-down"
         data-aos-duration="1100"
         className="p-4  md:mx-10 flex"
       >
-       
-          <img
-            src={sponsor.img}
-            width={width}
-            alt="fossunited"
-            srcset=""
-            className="m-auto	"
-          />
-      
+        <img
+          src={sponsor.img}
+          width={width}
+          alt="fossunited"
+          srcset=""
+          className="m-auto	"
+        />
       </a>
     ));
 
@@ -50,7 +56,7 @@ const Sponsors = () => {
           {renderSponsors(silverSponsors, 200)}
         </div>
         <h2 className="text-2xl font-semibold">Bronze</h2> */}
-        <div className="grid grid-cols-1  md:grid-cols-2     ">
+        <div className="grid grid-cols-1 md:grid-cols-2 ">
           {renderSponsors(bronzeSponsors, 200)}
         </div>
       </div>
