@@ -69,7 +69,7 @@ const Hero = () => {
               Software (FOSS).
             </p>
             <div className="flex gap-2">
-              <a href="/Register">
+              
                 <button
                   data-aos="fade-in"
                   data-aos-offset="200"
@@ -79,7 +79,7 @@ const Hero = () => {
                   data-aos-anchor="home"
                   className="inline-flex register bg-red text-white  text-red-500 items-center justify-center px-10 py-3 mr-3 text-xl font-medium text-center   bg-primary-700 hover:bg-primary-800 "
                 >
-                  Register
+                  Registeration Closed
                   {/* <svg
                 className="w-5 h-5 ml-2 -mr-1"
                 fill="currentColor"
@@ -93,7 +93,7 @@ const Hero = () => {
                 ></path>
               </svg> */}
                 </button>
-              </a>
+              
               <a href="/#about">
                 <button
                   data-aos="fade-in"
