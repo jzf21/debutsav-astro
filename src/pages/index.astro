@@ -12,6 +12,9 @@ import Button from "../components/Button/Button";
 import CountdownTimer from "../components/Countdown/Countdown";
 import EventDetails from "../components/EventDetails";
 import WhyAttend from "../components/WhyAttend/WhyAttend";
+import EventTimeline from "../components/Timeline/Timeline"
+import Timeline from "../components/Timeline/SortedTimeline"
+import EventsLayout from "../components/Timeline/EventTimeline"
 ---
 
 <style is:global>
@@ -73,7 +76,7 @@ import WhyAttend from "../components/WhyAttend/WhyAttend";
   <main>
     <Hero />
     <CountdownTimer
-      targetDate={new Date("June 17, 2023 09:30:00").getTime()}
+      targetDate={new Date("June 17, 2023 03:30:00").getTime()}
       client:only
     />
     <!-- <EventDetails /> -->
@@ -81,6 +84,9 @@ import WhyAttend from "../components/WhyAttend/WhyAttend";
     <Speakers client:load />
     <Sponsors />
     <WhyAttend />
+    <EventsLayout/>
+
+    
     <ContactUs />
     <Button />
   </main>
