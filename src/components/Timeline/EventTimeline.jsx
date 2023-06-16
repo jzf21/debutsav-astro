@@ -14,7 +14,7 @@ const EventsLayout = () => {
         time: "11:00am - 12:20pm",
         title: "A journey in the world of sync systems",
         description:
-          "Speaker: Aditya Anil Kumar, FOSS Contributor h\nLocation: SDPK Hall",
+          "Speaker: Andrew Bastin, CTO, Hoppscotch h\nLocation: SDPK Hall",
       },
       {
         time: "12:00pm - 1:00pm",
@@ -30,7 +30,7 @@ const EventsLayout = () => {
         time: "2:00pm - 4:30pm",
         title: "Workshop",
         description:
-          "Topic: Introduction to self-hosting\nConducted by: Athul Cyriac Ajay, Platform Engineer, Frappe\nLocation: CCF Hall",
+          "Topic: Introduction to self-hosting\nConducted by: Aditya Anilkumar, FOSS contributor\nLocation: CCF Hall",
       },
     ];
     const set2 = [
