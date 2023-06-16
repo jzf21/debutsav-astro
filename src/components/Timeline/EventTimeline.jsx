@@ -62,7 +62,7 @@ const EventsLayout = () => {
     ];
   return (
     <>
-      <h2 id="EventSchedule" className="text-5xl font-semibold text-center my-5">Event Timeline</h2>
+      <h2 id="#EventSchedule" className="text-5xl font-semibold text-center my-5">Event Timeline</h2>
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 ">
         <div>
           <h2 className="text-4xl text-center font-semibold my-5">Set 1</h2>
