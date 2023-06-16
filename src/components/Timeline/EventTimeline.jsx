@@ -4,41 +4,99 @@ import EventTimeline from './Timeline';
 
 
 const EventsLayout = () => {
+    const set1 = [
+      {
+        time: "9:30am -10:15am",
+        title: "Inaugaration Ceremony",
+        description: "",
+      },
+      {
+        time: "11:00am - 12:20pm",
+        title: "A journey in the world of sync systems",
+        description:
+          "Speaker: Andrew Bastin, CTO, Hopscotch\nLocation: SDPK Hall",
+      },
+      {
+        time: "12:00pm - 1:00pm",
+        title: "How I became a Debian Developer, and you could too.",
+        description:
+          "Speaker: Sahil Dhiman, Debian Developer\nLocation: SDPK Hall",
+      },
+      {
+        time: "1:00pm - 2:00pm",
+        title: "Lunch Break",
+      },
+      {
+        time: "2:00pm - 4:30pm",
+        title: "Workshop",
+        description:
+          "Topic: Introduction to self-hosting\nConducted by: Athul Cyriac Ajay, Platform Engineer, Frappe\nLocation: CCF Hall",
+      },
+    ];
+    const set2 = [
+        {time:"9:30am -10:15am",title:"Inaugaration Ceremony",
+        description:""
+    },
+      {
+        time: "11:00am - 1:30pm",
+        title: "Workshop",
+        description:
+          "Topic: Securing Debian GNU/Linux Systems while learning to hack the same.\nConducted by: Mufeedh V.H, Founder, Lyminal\nLocation: CCF Hall",
+      },
+      {
+        time: "1:30pm - 2:30pm",
+        title: "Lunch Break",
+      },
+      {
+        time: "2:30pm - 3:30pm",
+        title: "AI with Malayalam Computing",
+        description:
+          "Speaker: Kurian Benoy, Volunteer, SMC\nLocation: SDPK Hall",
+      },
+      {
+        time: "3:30pm - 4:30pm",
+        title: "A review of anthropology of the Fediverse",
+        description:
+          "Speaker: Abraham Raji, Debian Developer\nLocation: SDPK Hall",
+      },
+    ];
   return (
-    <div className='max-w-screen-2xl mx-auto '>
-      <Timeline className="">
-        <EventTimeline
-          leftSideContent="9:30am-10:30am"
-          title="Inaugaration Ceremony "
-        />
-        <EventTimeline
-          leftSideContent="12:00pm-1:00pm"
-          title=" A journey in the world of sync systems"
-          description="Speaker: Andrew Bastin, CTO, Hopscotch (SDPK Hall)"
-          className="md"
-        />
+    <>
+      <h2 className="text-5xl font-semibold text-center my-5">Event Timeline</h2>
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 ">
+        <div>
+          <h2 className="text-4xl text-center font-semibold my-5">Set 1</h2>
+          <Timeline className=" bg-white p-4 shadow-md">
+          
 
-        <EventTimeline
-          leftSideContent="12:00pm-1:00pm"
-          title="12:00pm - 1:00pm: How I became a Debian Developer, and you could too."
-          description="Speaker: Sahil Dhiman, Debian Developer (SDPK Hall)"
-          index={2}
-        />
-
-        <EventTimeline
-          title="Lunch Break"
-          leftSideContent="1:00pm-2:00pm"
-          date={new Date(2020, 7, 5)}
-          description=""
-          index={3}
-        />
-        <EventTimeline
-          title="Workshop:Introduction to Self Hosting"
-          leftSideContent="2:00pm-4:00pm"
-          description=" Conducted by: Athul Cyriac Ajay, Platform Engineer, Frappe (CCF Hall)"
-        />
-      </Timeline>
-    </div>
+            {set1.map((event, index) => (
+              <EventTimeline
+                key={index}
+                leftSideContent={event.time}
+                title={event.title}
+                description={event.description}
+                className={event.description ? "md" : ""}
+              />
+            ))}
+          </Timeline>
+        </div>
+        <div>
+          <h2 className="text-4xl text-center font-semibold my-5">Set 2</h2>
+          <Timeline className="p-4 bg-white shadow-md">
+          
+            {set2.map((event, index) => (
+              <EventTimeline
+                key={index}
+                leftSideContent={event.time}
+                title={event.title}
+                description={event.description}
+                className={event.description ? "md" : ""}
+              />
+            ))}
+          </Timeline>
+        </div>
+      </div>
+    </>
   );
 }
 

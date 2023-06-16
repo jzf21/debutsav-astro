@@ -10,10 +10,14 @@ const Sponsors = () => {
   const goldSponsors = [];
   const silverSponsors = [];
   const bronzeSponsors = [
-    {img: fossunited, link: "https://fossunited.org/"},
-    {img: frappe, link: "https://frappe.io/"},
+    { img: fossunited, link: "https://fossunited.org/" },
+    { img: frappe, link: "https://frappe.io/" },
     // {img: aguaindia, link: "https://www.aguaindia.com/"},
-    {img: mantis, link: "https://www.mantis.com/"},
+    { img: mantis, link: "https://www.mantis.com/" },
+    {
+      img: "https://www.aguaindia.com/public/frontend/img/auga-logo.png",
+      link: "https://www.aguaindia.com",
+    },
   ];
 
   const renderSponsors = (sponsors, width) =>

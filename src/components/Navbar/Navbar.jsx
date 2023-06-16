@@ -25,11 +25,13 @@ const Navbar = () => {
 
   return (
     <div
-      className={`w-screen h-[70px] flex flex-row items-center justify-between px-6 md:px-0 md:justify-around py-3 fixed top-0 z-[2]  ${
+      className={`w-screen h-[70px] flex flex-row items-center justify-between px-6 md:px-0 md:justify-around py-3 fixed top-0 z-40  ${
         scrollbar ? "bg-white text-black" : "bg-white"
       }`}
     >
-      <a href='/'><img  src={logo} alt="debutsav kochi logo" className="h-[50px]" /></a>
+      <a href="/">
+        <img src={logo} alt="debutsav kochi logo" className="h-[50px]" />
+      </a>
       <button
         onClick={handleHamburger}
         className="text-black text-4xl block md:hidden mr-3"
@@ -55,9 +57,9 @@ const Navbar = () => {
         )}
       </button>
       <div
-        className={`text-black transition-all duration-300 ease-in-out font-medium md:static md:w-max md:h-max md:pt-0 md:bg-transparent md:block md:mr-3 fixed top-0 w-screen pt-24 h-screen z-[-1] text-center  items-center ${
+        className={`text-black transition-all duration-300 ease-in-out font-medium md:static md:w-max md:h-max md:pt-0 md:bg-transparent md:block md:mr-3 fixed top-0 w-screen pt-24 h-screen text-center  items-center ${
           mobilenav
-            ? "right-0 flex flex-col  gap-8 bg-white  "
+            ? "right-0 flex flex-col  gap-8 bg-white  z-[-1]  "
             : "right-full flex flex-col gap-8 text-opacity-0  "
         }`}
       >
@@ -86,7 +88,7 @@ const Navbar = () => {
             Schedule
           </span>
         </a>
-         <a
+        <a
           className="group text-black transition-all duration-300 ease-in-out md:ml-8"
           href="/#speakers"
         >

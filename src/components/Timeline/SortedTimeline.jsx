@@ -27,7 +27,7 @@ export const Timeline = (props) => {
     });
   };
 
-  return <div className={className}>{renderEventsSorted()}</div>;
+  return <div className={className}>{children}</div>;
 };
 
 export default Timeline;
