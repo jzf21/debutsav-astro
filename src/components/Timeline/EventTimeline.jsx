@@ -7,14 +7,14 @@ const EventsLayout = () => {
     const set1 = [
       {
         time: "9:30am -10:15am",
-        title: "Inaugaration Ceremony",
+        title: "Inauguration Ceremony",
         description: "",
       },
       {
         time: "11:00am - 12:20pm",
         title: "A journey in the world of sync systems",
         description:
-          "Speaker: Andrew Bastin, CTO, Hopscotch\nLocation: SDPK Hall",
+          "Speaker: Aditya Anil Kumar, FOSS Contributor h\nLocation: SDPK Hall",
       },
       {
         time: "12:00pm - 1:00pm",
@@ -34,7 +34,7 @@ const EventsLayout = () => {
       },
     ];
     const set2 = [
-        {time:"9:30am -10:15am",title:"Inaugaration Ceremony",
+        {time:"9:30am -10:15am",title:"Inauguration Ceremony",
         description:""
     },
       {
@@ -62,7 +62,7 @@ const EventsLayout = () => {
     ];
   return (
     <>
-      <h2 className="text-5xl font-semibold text-center my-5">Event Timeline</h2>
+      <h2 id="EventSchedule" className="text-5xl font-semibold text-center my-5">Event Timeline</h2>
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 ">
         <div>
           <h2 className="text-4xl text-center font-semibold my-5">Set 1</h2>

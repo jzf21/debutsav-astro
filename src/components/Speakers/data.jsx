@@ -10,11 +10,11 @@ export const speakersList = [
       "https://www.linkedin.com/in/andrew-bastin-7456771a8/?originalSubdomain=ca",
   },
   {
-    name: "Athul Cyriac Ajay",
-    designation: "Platform Engineer, Frappe",
-    img: "https://avatars.githubusercontent.com/u/40897573?v=4",
-    url: "https://athulcyriac.in/",
-    linkedin: "https://www.linkedin.com/in/athul-cyriac-ajay/",
+    name: "Aditya Anilkumar",
+    designation: "FOSS contributor",
+    img: "https://media.licdn.com/dms/image/C4D03AQE1kqqPL0AAWg/profile-displayphoto-shrink_400_400/0/1601035760269?e=1692230400&v=beta&t=Y3XNr03j3K5SgM6bWtnedY6sRTjgMi2kYmz9dlETx7s",
+    url: "https://www.linkedin.com/in/adithyaanilkumar/",
+    linkedin: "https://www.linkedin.com/in/adithyaanilkumar/",
   },
   {
     name: "Mufeed V.H.",
