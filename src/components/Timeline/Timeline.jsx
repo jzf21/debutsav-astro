@@ -35,7 +35,7 @@ export const EventTimeline = (props) => {
     ? iconBackgroundClassName
     : darkMode
     ? "bg-slate-900 ring-red ring-2 ring-opacity-75"
-    : "bg-slate-200 ring-red bg-red ring-2 ring-opacity-75";
+    : "bg-slate-200 ring-red bg-red ring-2 ring-opacity-75 rounded-full h-6 w-6";
 
   const newCardClassName = cardClassName
     ? cardClassName
@@ -73,7 +73,7 @@ export const EventTimeline = (props) => {
       <div className="flex justify-between items-center w-full">
         {showLine && (
           <div
-            className={`border-2-2 absolute  border-2 h-full left-[2.15rem] ${newLineClassName}`}
+            className={`border-2-2 absolute  border-2 h-full left-[1.7rem] ${newLineClassName}`}
           />
         )}
         <div className="z-20">
